@@ -35,7 +35,7 @@ biblioteca (Characters / Enemies / Weapons / VFX / Props), com 0 falhas.
 
 - **Windows** (os scripts assumem caminhos do Windows; adapte se necessário)
 - **Python 3.10+** (para a extração)
-- **Blender 5.0+** (para importação e biblioteca)
+- **Blender 3.x / 4.x / 5.x** (compatível com todas — veja a seção acima)
 - O **jogo** *RE: Operation Raccoon City* instalado
 
 Opcional (recomendado): [ORCToolKit](https://github.com/PiMoNFeeD/ORCToolKit) (MIT),
@@ -52,58 +52,60 @@ cd ORC-Toolkit
 
 ---
 
-## Uso passo a passo
+## Uso rápido (assistente interativo)
 
-Defina o caminho do jogo e uma pasta de trabalho:
+A forma mais fácil: rode o **menu** e siga as opções.
 
 ```bash
-set GAME="C:\Program Files (x86)\DODI-Repacks\Resident Evil Operation Raccoon City"
-set WORK=C:\ORC-COMPLETO
+python orc_menu.py
 ```
 
-### 1. Extrair todos os `.ssg`
+```
+   1) Configurar jogo e Blender      ← detecta automaticamente
+   2) Extrair o jogo                 (.ssg -> arquivos)
+   3) Exportar modelos para FBX
+   4) Montar a Asset Library         (.blend + pastas + miniaturas)
+   5) Finalizar                      (registrar no Blender + addon)
+   6) FAZER TUDO automaticamente     ← roda 2→5 de uma vez
+   s) Ver o estado atual
+   q) Sair
+```
+
+O menu **detecta** o jogo e o Blender sozinho, salva a configuração em
+`orc_config.json` e mostra o progresso de cada etapa. Ideal para quem não quer
+mexer com linha de comando.
+
+### Compatibilidade com versões do Blender
+
+O toolkit funciona em **Blender 3.x, 4.x e 5.x**. As diferenças entre versões
+são tratadas automaticamente (ver `scripts/_compat.py`):
+
+| Mudança entre versões | Como é tratado |
+|-----------------------|----------------|
+| Engine EEVEE (`BLENDER_EEVEE` vs `BLENDER_EEVEE_NEXT`) | `_compat.eevee_engine()` testa os dois |
+| Transparência (`blend_method` → `surface_render_method` em 4.2+) | `_compat.set_material_alpha()` |
+| `orphans_purge` (assinatura mudou) | `_compat.purge_orphans()` |
+| Pasta de addons (`.../Blender/<versao>/...`) | `orc_menu.addon_dir_for()` detecta a versão |
+| Normais customizadas (crash 4.1+/5.x) | `_compat.set_custom_normals()` valida antes |
+
+> O menu detecta a versão do Blender via `blender --version` e usa os caminhos certos.
+
+---
+
+## Uso manual (linha de comando)
+
+Se preferir rodar cada etapa na mão, veja **[docs/PIPELINE.md](docs/PIPELINE.md)**.
+Resumo:
 
 ```bash
+set GAME=<pasta do jogo>
+set WORK=<pasta de trabalho>
+
 python scripts/01_ssg_extract.py "%GAME%" "%WORK%\ssg_unpacked"
-```
-
-Extrai **todos** os arquivos internos, preservando os caminhos originais
-(ex.: `dlc/pack1/characters/leon/models/leon.edgemodel`). É **retomável** e
-registra erros em `_errors.txt` sem abortar.
-
-### 2. Índice de assets (acelera muito o Blender)
-
-```bash
 python scripts/02_build_index.py "%WORK%\ssg_unpacked" "%WORK%\_asset_index.json"
 ```
 
-### 3. Importar/exportar com o Blender
-
-O importador (`03_orc_import_blender.py`) é o script do PiMoNFeeD (MIT),
-**corrigido para o Blender 5.0**. Para exportar tudo em FBX:
-
-```bash
-"C:\Program Files\Blender Foundation\Blender 5.0\blender.exe" ^
-  --background --factory-startup --python scripts/04_export_all_models.py -- ^
-  "%WORK%\ssg_unpacked" "%WORK%\fbx_models"
-```
-
-### 4. Montar a Asset Library (opcional)
-
-Os scripts `05`–`10` constroem um único `.blend` com coleções, catálogos,
-thumbnails e previews. Veja `docs/PIPELINE.md` para a ordem exata.
-
-### 5. Instalar o addon auxiliar (Blender)
-
-O addon `addon/orc_asset_helper.py` garante que os assets arrastados da
-biblioteca venham **editáveis** (converte instâncias e torna objetos linkados
-locais, para poder mover os ossos). Copie para:
-
-```
-%APPDATA%\Blender Foundation\Blender\5.0\scripts\addons\
-```
-
-E ative em *Edit ▸ Preferences ▸ Add-ons*.
+E assim por diante (ordem completa na documentação).
 
 ---
 
@@ -111,11 +113,16 @@ E ative em *Edit ▸ Preferences ▸ Add-ons*.
 
 | Arquivo | Descrição |
 |---------|-----------|
+| `orc_menu.py` | **Assistente interativo** (menu) — recomenda-se começar por aqui |
+| `scripts/_compat.py` | Camada de compatibilidade entre versões do Blender |
 | `scripts/01_ssg_extract.py` | Desempacota **todos** os `.ssg` (v5/v6, zlib, retomável) |
 | `scripts/01b_ssg_extract_single.py` | Desempacota **um** `.ssg` |
 | `scripts/02_build_index.py` | Gera índice JSON de assets |
-| `scripts/03_orc_import_blender.py` | Importa `.edgemodel` no Blender (PiMoNFeeD, MIT; corrigido p/ 5.0) |
+| `scripts/03_orc_import_blender.py` | Importa `.edgemodel` no Blender (PiMoNFeeD, MIT; compat. 3.x–5.x) |
 | `scripts/04_export_all_models.py` | Exporta todos os modelos p/ FBX por categoria |
+| `scripts/04b_export_characters_fbx.py` | Alternativa: 1 processo Blender por personagem |
+| `scripts/04c_batch_export.py` | Processa um lote de modelos (usado pelo 04) |
+| `scripts/04d_import_one.py` | Importa 1 modelo e exporta FBX (usado pelo 04b) |
 | `scripts/05_build_chunks.py` | Constrói a library em chunks (evita crash de memória) |
 | `scripts/06_build_library.py` | Importa FBX → `.blend` da biblioteca |
 | `scripts/07_merge_library.py` | Funde as partes num `.blend` único |
@@ -127,9 +134,11 @@ E ative em *Edit ▸ Preferences ▸ Add-ons*.
 | `scripts/13_fix_center_bones.py` | Centraliza modelos + ossos visíveis |
 | `scripts/14_fix_degenerate_alpha.py` | Corrige alpha degenerado (transparência) |
 | `scripts/15_register_library.py` | Registra a biblioteca no Blender |
+| `addon/orc_asset_helper.py` | Addon: deixa os assets editáveis ao arrastar |
 
 Configuração por variáveis de ambiente: `ORC_TEXDIR` (pasta de texturas),
-`ORC_LIBDIR` (pasta da biblioteca), `ORC_ASSET_INDEX_FILE`, `ORC_ASSET_ROOT`.
+`ORC_LIBDIR` (pasta da biblioteca), `ORC_BLENDER` (caminho do Blender),
+`ORC_IMPORTER` (importador), `ORC_ASSET_INDEX_FILE`, `ORC_ASSET_ROOT`.
 
 ---
 

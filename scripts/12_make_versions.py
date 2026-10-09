@@ -44,13 +44,19 @@ def drop_collections(names):
             bpy.data.collections.remove(col)
         except Exception:
             pass
-    # purga recursiva
+    # purga recursiva (compat entre versoes)
     total = 0
     for _ in range(20):
+        n = 0
         try:
             n = bpy.data.orphans_purge(do_local_ids=True, do_linked_ids=True, do_recursive=True)
         except TypeError:
-            n = bpy.data.orphans_purge(do_recursive=True)
+            try:
+                n = bpy.data.orphans_purge(do_recursive=True)
+            except Exception:
+                n = 0
+        except Exception:
+            n = 0
         total += n
         if not n:
             break

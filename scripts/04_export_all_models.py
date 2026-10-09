@@ -8,9 +8,9 @@ Usage:
 """
 import os, sys, json, glob, subprocess, collections, time
 
-BLENDER = r"C:\Program Files\Blender Foundation\Blender 5.0\blender.exe"
+BLENDER = os.environ.get("ORC_BLENDER") or r"C:\Program Files\Blender Foundation\Blender 5.0\blender.exe"
 HERE = os.path.dirname(os.path.abspath(__file__))
-BATCHER = os.path.join(HERE, "batch_export.py")
+BATCHER = os.path.join(HERE, "04c_batch_export.py")
 INDEX = os.path.join(HERE, "_asset_index.json")
 
 def internal_key(rel):

@@ -964,7 +964,12 @@ def parse_material(filename, model_ob, import_materials):
                                     print('Diffuse:', texture_path)
                                 links.new(texture_node.outputs["Color"], principled_bsdf.inputs["Base Color"])
                                 if alpha_is_meaningful(image) == True:
-                                    mat.blend_method = 'HASHED'
+                                    # compat: blend_method (<=4.1) / surface_render_method (4.2+)
+                                    try:
+                                        mat.blend_method = 'HASHED'
+                                    except Exception:
+                                        try: mat.surface_render_method = 'DITHERED'
+                                        except Exception: pass
                                     links.new(texture_node.outputs["Alpha"], principled_bsdf.inputs["Alpha"])
                             elif is_normal:
                                 textures_applied += 1

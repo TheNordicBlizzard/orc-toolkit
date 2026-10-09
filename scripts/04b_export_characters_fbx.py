@@ -3,11 +3,11 @@
 so a crash on one model doesn't abort the whole batch."""
 import os, sys, glob, subprocess
 
-BLENDER = r"C:\Program Files\Blender Foundation\Blender 5.0\blender.exe"
+BLENDER = os.environ.get("ORC_BLENDER") or r"C:\Program Files\Blender Foundation\Blender 5.0\blender.exe"
 HERE = os.path.dirname(os.path.abspath(__file__))
 READY = os.path.join(HERE, "ready_all")
 OUT = os.path.join(HERE, "fbx_all")
-IMPORTER = os.path.join(HERE, "import_one.py")
+IMPORTER = os.path.join(HERE, "04d_import_one.py")
 os.makedirs(OUT, exist_ok=True)
 
 models = sorted(glob.glob(os.path.join(READY, "*", "dlc", "pack1", "characters", "*", "models", "*.edgemodel")))

@@ -2,7 +2,7 @@ bl_info = {
     "name": "ORC Asset Library Helper",
     "author": "Hermes",
     "version": (1, 1, 0),
-    "blender": (4, 0, 0),
+    "blender": (3, 0, 0),
     "location": "View3D > Sidebar > ORC / automatico ao importar",
     "description": "Garante que os assets da ORC Asset Library venham EDITAVEIS: converte instancias de colecao em objetos reais e torna local qualquer objeto vindo como LINK (library linked / read-only).",
     "category": "Import-Export",

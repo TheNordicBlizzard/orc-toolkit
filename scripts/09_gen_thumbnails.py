@@ -5,7 +5,13 @@ items=json.load(open(manifest,encoding="utf-8"))
 os.makedirs(thumb_dir, exist_ok=True)
 
 def setup_render(sc):
-    sc.render.engine='BLENDER_EEVEE'
+    # compat: BLENDER_EEVEE (<=4.1 e >=5.0) / BLENDER_EEVEE_NEXT (4.2-4.x)
+    for _eng in ("BLENDER_EEVEE", "BLENDER_EEVEE_NEXT"):
+        try:
+            sc.render.engine = _eng
+            break
+        except Exception:
+            continue
     sc.render.resolution_x=320; sc.render.resolution_y=320
     sc.render.image_settings.file_format='JPEG'; sc.render.image_settings.quality=82
     try:
