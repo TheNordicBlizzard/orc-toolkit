@@ -90,6 +90,68 @@ Baseado no ORCToolKit do PiMoNFeeD (MIT). Feedback bem-vindo!
 
 ---
 
+## 📌 Post completo para Discord (menciona áudio, vídeo, dados etc.)
+
+```markdown
+**RE: Operation Raccoon City — toolkit de extração COMPLETO** 🧟🎬🎵
+
+Fala pessoal! Fiz um toolkit que extrai **tudo** do ORC e leva os modelos pro
+Blender — tudo num **menu interativo simples**, sem linha de comando.
+
+## 🎮 O que ele desempacota
+
+Extrai **todos os 2.144 arquivos `.ssg`** → **136.377 arquivos (~13 GB)**, 0 falhas.
+Nada é filtrado — você pega o jogo inteiro:
+
+| Categoria | Arquivos | Tamanho | Conteúdo |
+|-----------|---------:|--------:|----------|
+| 🧍 **Modelos** | 22.800 | 1,7 GB | `.edgemodel` (personagens, armas, cenário) |
+| 🎨 **Texturas** | 40.783 | 5,7 GB | `.dds` |
+| 🧩 **Materiais** | 22.014 | 7 MB | `.matb` |
+| 🦴 **Esqueletos/Anims** | 22.414 | 727 MB | rigs + animações |
+| 🎵 **Áudio** | 387 | **1,5 GB** | soundbanks Wwise `.bnk` |
+| 🎬 **Vídeo** | 104 | **1,6 GB** | 48 cutscenes `.bik` + `.fm` |
+| 📊 **Dados/Textos** | 1.661 | 38 MB | `.csv`, scripts `.lua`, `.msb`, `.tbin` |
+| 🖼️ **UI** | 247 | 56 MB | `.swb2`, `.vgoth`, `.mui` |
+
+## 🎵 Áudio — 6 idiomas dublados
+
+Dublagem completa incluída: **Inglês, Francês, Alemão, Italiano, Japonês, Espanhol**
+(diálogos de personagens, música, ambiente — ex.: `Heroes_Dialog.bnk`, `Nemesis.bnk`, `Music.bnk`).
+
+## 🎬 Vídeo
+
+48 cutscenes Bink em alta qualidade (`USS01_FMV01.bik`, `SPEC01_FMV01.bik`, ...).
+
+## 🧍 Pro Blender
+
+- Importa `.edgemodel` (malha + esqueleto + materiais)
+- Exporta tudo pra **FBX**, separado por categoria
+- Monta uma **Asset Library `.blend`** navegável
+  (Characters / Enemies / Weapons / VFX / Props) com miniaturas
+- Addon auxiliar pra os assets virem **editáveis** (dá pra mexer nos ossos!)
+
+## ✨ Destaques
+
+- 🖱️ **Menu interativo** (`python orc_menu.py`) — detecta jogo + Blender sozinho
+- 🔄 **Funciona no Blender 3.x, 4.x e 5.x**
+- 🧩 Lida com os travamentos conhecidos (normais, alpha, memória)
+
+## 📦 O que está incluído
+
+Apenas **scripts e documentação** — **nenhum asset do jogo**. Você extrai da
+**sua própria cópia** do jogo. (Assets são © CAPCOM / Slant Six.)
+
+## 🔗 Como pegar
+
+https://github.com/TheNordicBlizzard/orc-toolkit
+▶️ Rode `python orc_menu.py` e siga o menu.
+
+Baseado no ORCToolKit do PiMoNFeeD (MIT). Feedback e PRs bem-vindos!
+```
+
+---
+
 ## 📌 Resposta (quando perguntarem "cadê os modelos?")
 
 ```markdown
