@@ -1,53 +1,53 @@
-# Pipeline completo (ordem exata)
+# Full pipeline (exact order)
 
-Todos os comandos assumem:
+All commands assume:
 ```bash
-set GAME=<pasta do jogo>
-set WORK=<pasta de trabalho>
+set GAME=<game folder>
+set WORK=<work folder>
 set BLENDER="C:\Program Files\Blender Foundation\Blender 5.0\blender.exe"
 ```
 
 ---
 
-## Fase A — Extração (Python puro)
+## Phase A — Extraction (pure Python)
 
-### A1. Desempacotar todos os `.ssg`
+### A1. Unpack all `.ssg`
 ```bash
 python scripts/01_ssg_extract.py "%GAME%" "%WORK%\ssg_unpacked"
 ```
-→ 2.144 arquivos `.ssg` → ~113.829 arquivos (preserva caminhos internos).
-Retomável: re-executar pula o que já foi feito (`_done.txt`).
+→ 2,144 `.ssg` files → ~113,829 files (internal paths preserved).
+Resumable: re-running skips what's already done (`_done.txt`).
 
-### A2. Índice de assets (essencial p/ performance)
+### A2. Asset index (essential for performance)
 ```bash
 python scripts/02_build_index.py "%WORK%\ssg_unpacked" "%WORK%\_asset_index.json"
 ```
-Gera um JSON `nome → caminho absoluto`. Sem ele, cada processo Blender re-varre
-113k arquivos (~40 s cada).
+Generates a JSON `name → absolute path`. Without it, every Blender process
+re-scans 113k files (~40 s each).
 
-### A3. (Opcional) coletar arquivos soltos por categoria
-Organize `ssg_unpacked` em `loose/` (models, textures, materials, skeletons...) —
-veja `build_final.py` no histórico do projeto se precisar.
+### A3. (Optional) collect loose files by category
+Organize `ssg_unpacked` into `loose/` (models, textures, materials, skeletons...)
+— see `build_final.py` in the project history if you need it.
 
 ---
 
-## Fase B — Exportação em FBX
+## Phase B — FBX export
 
-### B1. Manifesto de modelos
-Liste todos os `.edgemodel` com magic `FM6S` (filtrando os `IM6S`):
+### B1. Model manifest
+List every `.edgemodel` with magic `FM6S` (filtering out the `IM6S`):
 ```
-formato: [[caminho_fbx, "categoria/nome"], ...]
-categorias: characters / weapons / vfx / worlds
+format: [[fbx_path, "category/name"], ...]
+categories: characters / weapons / vfx / worlds
 ```
 
-### B2. Exportar
+### B2. Export
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/04_export_all_models.py -- ^
-  "%WORK%\_all_manifest.json" "%WORK%\fbx_models"
+  "%WORK%\ssg_unpacked" "%WORK%\fbx_models"
 ```
-Roda **um processo Blender por lote** com **split-retry** (isola modelos que travam).
+Runs **one Blender process per batch** with **split-retry** (isolates crashing models).
 
-Variáveis de ambiente úteis:
+Useful environment variables:
 ```
 ORC_ASSET_INDEX_FILE=%WORK%\_asset_index.json
 ORC_ASSET_ROOT=%WORK%\ssg_unpacked
@@ -55,32 +55,32 @@ ORC_ASSET_ROOT=%WORK%\ssg_unpacked
 
 ---
 
-## Fase C — Asset Library (Blender)
+## Phase C — Asset Library (Blender)
 
-### C1. Construir em chunks (evita crash de memória)
+### C1. Build in chunks (avoids memory crash)
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/05_build_chunks.py -- ^
-  "%WORK%\_all_manifest.json" "%WORK%\_chunks" 300
+  "%WORK%" "%WORK%\_all_manifest.json" "%WORK%\ORC_AssetLibrary.blend" 300
 ```
-> Um único processo com 2.347 FBX crasha (~1000 modelos). Chunks de 300 resolvem.
-> `05_build_chunks.py` tem **split recursivo**: um chunk que falha é dividido e
-> re-tentado, isolando o modelo ruim.
+> A single process with 2,347 FBX crashes (~1,000 models). Chunks of 300 fix it.
+> `05_build_chunks.py` has **recursive split**: a chunk that fails is halved and
+> retried, isolating the bad model.
 
-### C2. Fundir num `.blend` único
+### C2. Merge into a single `.blend`
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/07_merge_library.py -- ^
   "%WORK%\_chunks" "%WORK%\ORC_AssetLibrary.blend"
 ```
-Classifica cada objeto pela **cadeia de parentesco** (malha → armature → holder)
-usando o mapa `nome → categoria` do manifesto.
+Classifies each object by its **parent chain** (mesh → armature → holder)
+using the `name → category` map from the manifest.
 
-### C3. Converter em *collection assets*
+### C3. Convert to *collection assets*
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/08_convert_to_collections.py -- ^
   "%WORK%\ORC_AssetLibrary.blend" "%WORK%\thumbnails"
 ```
-> **Crítico:** cada modelo vira uma **Collection** marcada como asset. Se usar
-> *object assets* (o Empty holder), arrastar traz **só o Empty**, sem a malha.
+> **Critical:** each model becomes a **Collection** marked as an asset. If you use
+> *object assets* (the Empty holder), dragging brings **only the Empty**, no mesh.
 
 ### C4. Thumbnails + previews
 ```bash
@@ -91,64 +91,64 @@ usando o mapa `nome → categoria` do manifesto.
   "%WORK%\ORC_AssetLibrary.blend" "%WORK%\thumbnails"
 ```
 
-### C5. Catálogos (pastas)
+### C5. Catalogs (folders)
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/11_organize_catalogs.py -- ^
   "%WORK%\ORC-Asset-Library"
 ```
-Classifica em Characters / Enemies / Weapons / VFX / Props (+ subpastas) e
-escreve `blender_assets.cats.txt`.
+Classifies into Characters / Enemies / Weapons / VFX / Props (+ subfolders) and
+writes `blender_assets.cats.txt`.
 
 ---
 
-## Fase D — Ajustes finais
+## Phase D — Final touches
 
-### D1. Centralizar + ossos visíveis
+### D1. Center + visible bones
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/13_fix_center_bones.py -- ^
   "%WORK%\ORC-Asset-Library\ORC_AssetLibrary.blend"
 ```
 
-### D2. Versões leve / só-props (opcional)
+### D2. Light / props-only versions (optional)
 ```bash
 "%BLENDER%" --background --factory-startup --python scripts/12_make_versions.py -- ^
   "%WORK%\ORC-Asset-Library"
 ```
 
-### D3. Registrar a biblioteca no Blender
+### D3. Register the library in Blender
 ```bash
 "%BLENDER%" --background --python scripts/15_register_library.py -- ^
   "ORC Assets" "%WORK%\ORC-Asset-Library"
 ```
 
-### D4. Addon auxiliar
-Copie `addon/orc_asset_helper.py` para a pasta de addons do Blender e ative.
+### D4. Helper addon
+Copy `addon/orc_asset_helper.py` into Blender's addons folder and enable it.
 
 ---
 
-## Estrutura final esperada
+## Expected final structure
 
 ```
 %WORK%\
-├── ssg_unpacked\              (113k arquivos)
+├── ssg_unpacked\              (113k files)
 ├── _asset_index.json
-├── fbx_models\                (FBX por categoria)
-├── _chunks\                   (partes intermediárias)
-├── thumbnails\                (2.337 JPG 320×320)
+├── fbx_models\                (FBX by category)
+├── _chunks\                   (intermediate parts)
+├── thumbnails\                (2,337 JPG 320×320)
 └── ORC-Asset-Library\
     ├── ORC_AssetLibrary.blend
-    ├── ORC_textures\          (PNG externalizadas)
+    ├── ORC_textures\          (externalized PNGs)
     ├── thumbnails\
     └── blender_assets.cats.txt
 ```
 
-## Performance (referência, i5 + 16 GB RAM)
+## Performance (reference, i5 + 16 GB RAM)
 
-| Etapa | Tempo |
-|-------|-------|
-| Extração dos `.ssg` | ~6 min |
-| Export FBX (todos os modelos) | ~1 h |
-| Build da library (chunks) | ~35 min |
+| Step | Time |
+|------|------|
+| `.ssg` extraction | ~6 min |
+| FBX export (all models) | ~1 h |
+| Library build (chunks) | ~35 min |
 | Merge | ~17 min |
 | Thumbnails | ~20 min |
 | Previews | ~5 min |

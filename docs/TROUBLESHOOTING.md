@@ -1,73 +1,75 @@
-# Solução de problemas
+# Troubleshooting
 
-## Extração
+## Extraction
 
-**`.ssg` falha com `zlib.error`**
-Arquivos grandes (level chunks) têm um pequeno bloco não-zlib entre blocos
-comprimidos. O `01_ssg_extract.py` já trata: no erro, procura o próximo header
-zlib válido (`78 01/5e/9c/da`) e retoma. Se ainda falhar, veja `_errors.txt`.
+**`.ssg` fails with `zlib.error`**
+Large files (level chunks) have a small non-zlib block between compressed
+blocks. `01_ssg_extract.py` already handles it: on error, it looks for the next
+valid zlib header (`78 01/5e/9c/da`) and resumes. If it still fails, check
+`_errors.txt`.
 
-**Cutscenes saem corrompidas**
-Cutscenes (NIS) misturam seções comprimidas e não-comprimidas. A versão atual
-calcula o offset correto — atualize o script.
+**Cutscenes come out corrupted**
+Cutscenes (NIS) mix compressed and uncompressed sections. The current version
+computes the correct offset — update the script.
 
-## Blender / Importação
+## Blender / Import
 
-**`EXCEPTION_ACCESS_VIOLATION` ao importar um modelo**
-Crash nativo (não capturável por try/except). Causa: normais de comprimento
-zero/NaN. O importador sanitiza — se persistir, o modelo é LOD shadow; pule-o.
+**`EXCEPTION_ACCESS_VIOLATION` when importing a model**
+Native crash (not catchable by try/except). Cause: zero-length/NaN normals.
+The importer sanitizes them — if it persists, the model is a shadow LOD; skip it.
 
-**Blender crasha ao abrir o `.blend` da biblioteca**
-**Pressão de RAM.** A library carrega ~28.000 imagens (~4 GB). Feche outros
-Blenders/programas pesados. A abertura é intermitente: com a máquina livre, abre normal.
+**Blender crashes opening the library `.blend`**
+**RAM pressure.** The library loads ~28,000 images (~4 GB). Close other
+Blender instances/heavy programs. Opening is intermittent: with the machine free,
+it opens fine.
 
 **"Cannot edit library linked or non-editable override object"**
-O asset veio como **LINK** (read-only). Soluções:
-- No Asset Browser: **Import Method = Append** (Preferences ▸ File Paths ▸ Asset Libraries)
-- Ou: `Object ▸ Relations ▸ Make Local ▸ All`
-- O addon `orc_asset_helper` faz isso automaticamente.
+The asset came in as **LINK** (read-only). Fixes:
+- In the Asset Browser: **Import Method = Append** (Preferences ▸ File Paths ▸ Asset Libraries)
+- Or: `Object ▸ Relations ▸ Make Local ▸ All`
+- The `orc_asset_helper` addon does this automatically.
 
-**Arrastar um asset traz só um Empty (sem malha/ossos)**
-Você está arrastando um **object asset** ou uma **instância**. Use **collection
-assets** (o build já converte). Ou desmarque **Instance** no cabeçalho do Asset
-Browser antes de arrastar.
+**Dragging an asset brings only an Empty (no mesh/bones)**
+You're dragging an **object asset** or an **instance**. Use **collection
+assets** (the build already converts them). Or uncheck **Instance** in the Asset
+Browser header before dragging.
 
-**Ossos não se movem / não dá para clicar neles**
-1. Entre em **Pose Mode** (selecione a Armature → `Ctrl+Tab`).
-2. Os ossos precisam estar **na frente** da malha: `armature.show_in_front = True`
-   (o `13_fix_center_bones.py` faz isso).
+**Bones don't move / can't click them**
+1. Enter **Pose Mode** (select the Armature → `Ctrl+Tab`).
+2. Bones need to be **in front of** the mesh: `armature.show_in_front = True`
+   (`13_fix_center_bones.py` does this).
 
-**Modelo aparece longe do centro / flutuando**
-A armadura vem deslocada pela engine. `13_fix_center_bones.py` centraliza
-(X/Y no centro, base em Z=0).
+**Model appears far from center / floating**
+The armature comes offset from the engine. `13_fix_center_bones.py` centers it
+(X/Y at origin, base at Z=0).
 
-**Corpo/cabelo transparente**
-Textura DXT5 com alpha degenerado (todo 0 ou todo 255). `14_fix_degenerate_alpha.py`
-força alpha a 255 mantendo a cor.
+**Body/hair is transparent**
+DXT5 texture with degenerate alpha (all 0 or all 255). `14_fix_degenerate_alpha.py`
+forces alpha to 255 while keeping the color.
 
 ## Asset Library
 
-**Os assets não aparecem no Asset Browser**
-- Confirme a biblioteca em *Preferences ▸ File Paths ▸ Asset Libraries*.
-- Clique no ícone **⟳** (atualizar) no cabeçalho do Asset Browser.
-- Reinicie o Blender.
+**Assets don't show in the Asset Browser**
+- Confirm the library in *Preferences ▸ File Paths ▸ Asset Libraries*.
+- Click the **⟳** (refresh) icon in the Asset Browser header.
+- Restart Blender.
 
-**Assets aparecem duplicados**
-Você tem mais de um `.blend` na mesma pasta de biblioteca. Ponha cada versão em
-sua **própria subpasta** com seu próprio `blender_assets.cats.txt`.
+**Assets appear duplicated**
+You have more than one `.blend` in the same library folder. Put each version in
+its **own subfolder** with its own `blender_assets.cats.txt`.
 
-**As pastas (catálogos) aparecem vazias**
-O `blender_assets.cats.txt` precisa estar **ao lado** do `.blend`, e os
-`catalog_id` dos assets precisam existir nele. Veja `11_organize_catalogs.py`.
+**The folders (catalogs) appear empty**
+The `blender_assets.cats.txt` must be **next to** the `.blend`, and the assets'
+`catalog_id`s must exist in it. See `11_organize_catalogs.py`.
 
-**As texturas somem ao mover o `.blend`**
-Os caminhos são **relativos** (`//ORC_textures/...`). Mova o `.blend` **junto**
-com a pasta `ORC_textures`. Ou `File ▸ External Data ▸ Find Missing Files`.
+**Textures disappear when moving the `.blend`**
+Paths are **relative** (`//ORC_textures/...`). Move the `.blend` **together**
+with the `ORC_textures` folder. Or `File ▸ External Data ▸ Find Missing Files`.
 
 ## Performance
 
-**O build da library crasha por volta de 1000 modelos**
-Não construa num processo único. Use chunks (`05_build_chunks.py`) com split-recursivo.
+**The library build crashes around 1,000 models**
+Don't build in a single process. Use chunks (`05_build_chunks.py`) with recursive split.
 
-**Cada processo Blender demora muito para iniciar**
-Falta o índice de assets. Rode `02_build_index.py` e defina `ORC_ASSET_INDEX_FILE`.
+**Each Blender process takes a long time to start**
+The asset index is missing. Run `02_build_index.py` and set `ORC_ASSET_INDEX_FILE`.
