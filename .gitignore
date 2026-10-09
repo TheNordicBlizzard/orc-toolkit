@@ -8,6 +8,7 @@ __pycache__/
 *.blend2
 
 # Dados gerados (não versionar)
+orc_config.json
 ssg_unpacked/
 extracted/
 loose/
