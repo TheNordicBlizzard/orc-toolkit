@@ -1,17 +1,19 @@
-# Post de divulgação (inglês)
+# Promotion posts (ready to copy & paste)
 
-Textos prontos para copiar e colar. Substitua `SEU_USUARIO` pelo seu usuário do GitHub.
+Ready-to-use texts for sharing the toolkit. Just copy and post.
+
+**Repo:** https://github.com/TheNordicBlizzard/orc-toolkit
 
 ---
 
-## 📌 Post para fórum (RE Modding Boards / Xentax / Reddit)
+## 📌 Forum post (RE Modding Boards / Xentax / Reddit)
 
-**Título:**
+**Title:**
 ```
 [Tool] RE: Operation Raccoon City — one-click extraction toolkit (menu, Blender 3.x-5.x)
 ```
 
-**Corpo:**
+**Body:**
 
 ```markdown
 Hey everyone,
@@ -50,7 +52,7 @@ the game. (Assets are © CAPCOM / Slant Six.)
 ## Get it
 
 ```
-https://github.com/SEU_USUARIO/orc-toolkit
+https://github.com/TheNordicBlizzard/orc-toolkit
 ```
 
 Run `python orc_menu.py` and follow the menu. Full walkthrough in `INSTALL.md`.
@@ -65,7 +67,7 @@ Feedback and pull requests welcome!
 
 ---
 
-## 📌 Post curto para Discord
+## 📌 Short post for Discord
 
 ```markdown
 **RE: Operation Raccoon City — extraction toolkit** 🧟
@@ -79,7 +81,7 @@ it's all wrapped in a **simple menu**, no command-line needed.
 ✅ Works on **Blender 3.x, 4.x and 5.x**
 ✅ No game assets included — you use your own copy
 
-🔗 https://github.com/SEU_USUARIO/orc-toolkit
+🔗 https://github.com/TheNordicBlizzard/orc-toolkit
 ▶️ Just run `python orc_menu.py`
 
 Built on PiMoNFeeD's ORCToolKit (MIT). Feedback welcome!
@@ -87,7 +89,7 @@ Built on PiMoNFeeD's ORCToolKit (MIT). Feedback welcome!
 
 ---
 
-## 📌 Comentário/resposta (quando perguntarem "cadê os modelos?")
+## 📌 Reply (when someone asks "where are the models?")
 
 ```markdown
 The repo intentionally ships **no game assets** — only the extraction code.
@@ -98,7 +100,7 @@ approach PiMoNFeeD took with ORCToolKit. 👍
 
 ---
 
-## 📌 Descrição do repositório (GitHub "About")
+## 📌 Repository description (GitHub "About")
 
 ```
 One-click toolkit to extract RE: Operation Raccoon City models into Blender —
@@ -106,3 +108,22 @@ interactive menu, FBX export, browsable Asset Library. Blender 3.x-5.x. No game 
 ```
 
 **Topics/tags:** `resident-evil` `operation-raccoon-city` `blender` `modding` `asset-extraction` `hexane-engine` `fbx` `game-ripping`
+
+---
+
+## 📌 Release announcement (v1.0)
+
+```markdown
+**v1.0 — first public release** 🎉
+
+Extract RE: Operation Raccoon City models into Blender with one interactive menu.
+
+- 🖱️ Menu-based workflow (`python orc_menu.py`) — auto-detects game + Blender
+- 🔄 Compatible with Blender 3.x / 4.x / 5.x
+- 📦 2,144 `.ssg` → 113,829 files, 0 failures
+- 🗂️ 2,337 models organized into a browsable Asset Library
+  (Characters / Enemies / Weapons / VFX / Props)
+- 🧩 Robust against the known crashes (normals, alpha, memory)
+
+Download the zip below (code only — no game assets).
+```
