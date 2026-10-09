@@ -156,7 +156,6 @@ Environment variables: `ORC_TEXDIR` (textures folder),
 - **[docs/FORMAT.md](docs/FORMAT.md)** — the `.ssg` and `.edgemodel` formats (Hexane Engine)
 - **[docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)** — common errors and fixes
 - **[docs/SHARE.md](docs/SHARE.md)** — ready-to-use promo posts
-
 ---
 
 ## Credits

@@ -1,0 +1,56 @@
+name: Build release zip
+
+# Gera o ORC-Toolkit.zip e anexa ao release automaticamente.
+# Dispara quando um release é publicado (ou manualmente via "Run workflow").
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to attach the zip to (e.g. v1.0)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build zip (code + docs only)
+        run: |
+          # Empacota tudo, exceto o que não deve ir (git, caches, config pessoal)
+          zip -r ORC-Toolkit.zip . \
+            -x ".git/*" \
+            -x "*/__pycache__/*" \
+            -x "__pycache__/*" \
+            -x "*.pyc" \
+            -x "orc_config.json" \
+            -x ".github/*"
+          echo "Conteúdo do zip:"
+          unzip -l ORC-Toolkit.zip | tail -5
+
+      - name: Upload to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ORC-Toolkit.zip
+
+      - name: Upload as artifact (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORC-Toolkit
+          path: ORC-Toolkit.zip
+
+      - name: Attach to tag (manual run with tag)
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.tag != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag }}
+          files: ORC-Toolkit.zip
