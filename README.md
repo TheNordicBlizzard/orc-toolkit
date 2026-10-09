@@ -60,6 +60,11 @@ A forma mais fácil: rode o **menu** e siga as opções.
 python orc_menu.py
 ```
 
+> 📖 **Novo no assunto?** Veja o **[INSTALL.md](INSTALL.md)** — guia completo
+> do zero, com imagens.
+
+![Menu do assistente](docs/menu.png)
+
 ```
    1) Configurar jogo e Blender      ← detecta automaticamente
    2) Extrair o jogo                 (.ssg -> arquivos)
