@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Blender
+*.blend1
+*.blend2
+
+# Dados gerados (não versionar)
+ssg_unpacked/
+extracted/
+loose/
+fbx/
+fbx_models/
+fbx_all/
+ready/
+ready_all/
+_chunks/
+thumbnails/
+ORC_textures/
+*.log
+
+# Assets do jogo — NUNCA versionar
+*.edgemodel
+*.matb
+*.dds
+*.hkx
+*.ssg
