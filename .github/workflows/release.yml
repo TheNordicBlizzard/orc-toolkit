@@ -1,41 +1,34 @@
-name: Build release source zip
+name: Test and package source (workflow artifact only)
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
-      tag:
-        description: 'Existing tag to package and attach (required for manual run)'
+      ref:
+        description: 'Branch or tag to verify; never attaches files to Releases'
         required: true
+        default: master
         type: string
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build-zip:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout intended release tag
+      - name: Checkout requested revision
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.release.tag_name || inputs.tag }}
-      - name: Setup Python for asset-free packaging tests
+          ref: ${{ inputs.ref }}
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.14'
-      - name: Test exact allowlist packaging (no GUI or private fixtures)
+      - name: Test allowlist packaging without GUI or private fixtures
         run: python -B -m unittest discover -s tests -p test_release_package.py -v
       - name: Build and verify source/docs ZIP
         run: python -B tools/package_source.py --output ORC-Toolkit.zip
-      - name: Upload source ZIP to existing release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ github.event.release.tag_name || inputs.tag }}
-          files: ORC-Toolkit.zip
-          fail_on_unmatched_files: true
-      - name: Preserve source ZIP as workflow artifact
+      - name: Preserve ZIP only as a workflow artifact
         uses: actions/upload-artifact@v4
         with:
           name: ORC-Toolkit-source

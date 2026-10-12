@@ -1,6 +1,6 @@
 # ORC Asset Explorer — tutorial por função (PT-BR)
 
-FullExport ainda não publicado; EXE canônico local e candidato possuem agora o mesmo SHA256 conferido independentemente. Evidências e lacunas: [cobertura](COVERAGE.pt-BR.md). Use apenas sua instalação, somente leitura.
+Tutorial do programa publicado como candidata v1.1.0-rc.1. Use sua própria instalação, somente leitura. Resultados históricos e lacunas de teste são separados por build: [cobertura](COVERAGE.pt-BR.md) e [auditoria final](RELEASE-AUDIT.md).
 
 ![Tela inicial real de fonte isolada, sem assets de jogo](screenshots/welcome_pt-BR.png)
 

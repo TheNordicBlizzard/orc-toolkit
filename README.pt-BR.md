@@ -1,180 +1,154 @@
-# RE: Operation Raccoon City — Toolkit
+# ORC Asset Explorer
 
-**v1.1.0-rc.1 — candidata de lançamento.** [Downloads](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.1.0-rc.1) · [Primeiro release v1.0](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.0). Fonte, addons Blender e candidata Windows com cobertura delimitada; não é uma versão estável ou universalmente validada. Instale o [pré-requisito Microsoft Visual C++ v14 x64 oficial](https://aka.ms/vc14/vc_redist.x64.exe). Leia a [auditoria do artefato e as lacunas de teste](docs/RELEASE-AUDIT.md). O importador Python pertence ao mantenedor e foi autorizado sob MIT existente; avisos aplicáveis de terceiros permanecem.
+Programa desktop para explorar e extrair arquivos de **Resident Evil: Operation Raccoon City**, com prévia de modelos, texturas, áudio e vídeo.
 
-[English](README.md) · [Índice da documentação](docs/INDEX.pt-BR.md) · [Histórico](CHANGELOG.pt-BR.md)
+[English](README.md) · [Baixar programa](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.1.0-rc.1) · [Changelog](CHANGELOG.pt-BR.md)
 
-Fluxos separados:
-- **GUI Explorer Windows:** SSG/pasta/BNK/PCK somente leitura, prévia GPU de malha/textura, mídia via decoders opcionais, extração segura, inventário/lote da instalação; FBX/blend/GLB via Blender opcional. [Tutorial por função](docs/EXPLORER.pt-BR.md).
-- **Menu/pipeline legado:** extração Python, FBX e Asset Library Blender. Já público; preservado abaixo. [Instalação](INSTALL.pt-BR.md) · [Pipeline](docs/PIPELINE.pt-BR.md).
-- **ORC Mod Tools:** addon Blender separado, candidato isolado 1.1.2 não instalado; Explorer não depende dele. [Guia e limites CLI experimental](docs/ADDON.pt-BR.md).
-- **NativeBridge / ORC Complemento 0.1.0:** addon Blender independente somente posições e CLI de projeto. Extrair Explorer → projeto nativo novo → editar posições Blender → novo edgemodel → reler Explorer. Contrato por arquivos, sem menu automático ou injeção no jogo. [Fluxo completo e limites](tools/native_bridge/README.pt-BR.md).
+> **v1.1.0-rc.1 — pré-release.** O release disponibiliza somente o programa Windows com documentação e licenças. Addons Blender e ferramentas experimentais permanecem em desenvolvimento no repositório e não são necessários para usar o Explorer.
 
-**Sem distribuição de assets do jogo.** Use sua própria cópia e mantenha extraídos privados. Rig nativo **SEM VÍNCULO**, zero pesos no Explorer; sem animação, paleta skin validada ou promessa de writer in-game. Explorer remove triângulos duplicados Ada inclusive no blend; não é topologia nativa exata.
+![Tela inicial real, sem assets do jogo](docs/screenshots/welcome_pt-BR.png)
 
-Evidência local registra 94 testes de fonte e checks do candidato frozen, inventário seco de 2.144 SSG e dois lotes reduzidos de três itens—não uma nova extração completa do jogo. Consulte [cobertura](docs/COVERAGE.pt-BR.md). Totais históricos v1.0 abaixo são alegações das notas do release, não novas medições.
+## Tudo que o programa pode fazer
 
-![Interface real de fonte sem assets](docs/screenshots/welcome_pt-BR.png)
+| Área | Funções disponíveis |
+|---|---|
+| Abrir e organizar | SSG e backups, bancos BNK/PCK, pastas extraídas e mídia solta compatível; pesquisa, filtros de categorias/extensões e seleção múltipla. |
+| Modelos | FM6S 17/18 suportado, sólido/texturizado/wireframe, diffuse e UV resolvidos, órbita/pan/zoom/reset, helpers de sombra e overlay manual de esqueleto. |
+| Texturas | DDS completo, PNG/JPEG/BMP/TGA; mover, ampliar, ajustar, pixels 1:1 e exportar PNG. Imagem guardada para aplicação manual no modelo. |
+| Áudio | Índices Wwise BNK/PCK, inspeção WEM, decodificação/reprodução/parada e exportação WAV com decoder externo. |
+| Vídeo | Prévia de até 10 s com FFmpeg, início configurável, reprodução/pausa e exportação de quadro PNG. Sem áudio sincronizado. |
+| Extração | Selecionados/toda a origem e lote da instalação, preservando caminhos; opções de arquivos soltos/bancos, inventário, progresso e relatório. |
+| Exportação 3D | FBX, `.blend` e GLB via Blender externo; diffuse/PNG e verificação dos arquivos reabertos. Esqueleto resolvido, quando disponível, sem vínculo deformável validado. |
+| Inspeção | Propriedades, referências de material, texto/hex inicial, origem, GPU real, mensagens e logs. |
+| Configurações | Português/inglês persistente, caminhos das dependências, detecção de existência e links oficiais. |
+| Segurança | Fontes somente leitura, proteção de destino, recusa de sobrescrita/caminhos inseguros e cancelamento preservando concluídos. |
 
-**Requisitos:** Windows 11 x64 testado, GPU/driver OpenGL 3.3+ de hardware para prévias, saída gravável e disco/cache suficiente. EXE portable dispensa instalação separada de Python; Blender é opcional para exportar modelos, obrigatório para biblioteca legada/addon. Não se estabeleceu mínimo fixo RAM/VRAM/CPU nem garantia universal de fps. [Dependências](DEPENDENCIES.md) · [Build/portabilidade](docs/BUILD.pt-BR.md) · [Avisos](THIRD_PARTY_NOTICES.md).
+## Instalar e começar
 
----
+1. Baixe **`ORC-Asset-Explorer-Windows-x64-v1.1.0-rc.1.zip`** no release.
+2. Extraia o ZIP inteiro para uma pasta gravável fora da instalação do jogo. Não execute dentro do ZIP.
+3. Se necessário, instale o [Microsoft Visual C++ v14 x64 oficial](https://aka.ms/vc14/vc_redist.x64.exe).
+4. Abra **`ORC_Asset_Explorer.exe`**. Não precisa instalar Python nem addon Blender.
+5. Escolha o idioma no topo e siga **Abrir → Selecionar → Visualizar → Extrair/Exportar**.
 
-## O que este toolkit faz
+**Requisitos:** Windows 11 x64 testado; Windows 10 não foi validado. Prévia exige OpenGL 3.3+ de hardware. Intel UHD 770 e RTX 3050 foram testadas em builds do projeto; não há garantia universal de 60 FPS nem mínimo fixo de RAM/VRAM medido. Reserve disco para cache/saídas. Área útil principal verificada: 1024×680; escala alta do Windows pode exigir resolução maior.
 
-```
-Jogo (.ssg)  →  [extração]  →  arquivos soltos  →  [import Blender]  →  FBX / Asset Library
-```
+## Dependências opcionais
 
-| Etapa | Script | Resultado |
-|-------|--------|-----------|
-| 1. Desempacotar `.ssg` | `01_ssg_extract.py` | Árvore com todos os `.edgemodel`, `.matb`, `.dds` |
-| 2. Índice de assets | `02_build_index.py` | JSON de resolução rápida de texturas |
-| 3. Importar no Blender | `03_orc_import_blender.py` | Malha + esqueleto + materiais |
-| 4. Exportar FBX | `04_export_all_models.py` | FBX por categoria (characters/weapons/vfx/worlds) |
-| 5. Asset Library | `05`–`10` | `.blend` único, catálogos, thumbnails, previews |
-| 6. Ajustes finais | `11`–`15` | Versões leve/pesada, centralização, correções |
+Em **Configurações → Dependências**, selecione o executável e use **Salvar caminhos**. “Detectado” significa existência, não autenticidade ou compatibilidade garantida.
 
-**Resultado de referência:** 2.144 `.ssg` → 113.829 arquivos; 2.337 modelos em
-biblioteca (Characters / Enemies / Weapons / VFX / Props), com 0 falhas.
+| Ferramenta | Usada para | Links |
+|---|---|---|
+| FFmpeg | Vídeo/Bink e áudio comum compatível | [Oficial](https://ffmpeg.org/download.html) · [Código](https://github.com/FFmpeg/FFmpeg) · [Gyan Windows — terceiro](https://www.gyan.dev/ffmpeg/builds/) |
+| vgmstream-cli | Áudio Wwise/formatos de jogos compatíveis | [Releases](https://github.com/vgmstream/vgmstream/releases) · [Código](https://github.com/vgmstream/vgmstream) |
+| Blender | Exportar FBX/`.blend`/GLB | [Oficial](https://www.blender.org/download/) · [Código](https://github.com/blender/blender) |
 
----
+Essas ferramentas não acompanham o programa. **Abrir SSG, visualizar modelos/texturas e extrair bytes não depende delas.** Blender 5.0.1 foi testado para conversão.
 
-## Requisitos
+## Tutorial completo
 
-- **Windows** (os scripts assumem caminhos do Windows; adapte se necessário)
-- **Python 3.10+** (para a extração)
-- **Blender 3.x / 4.x / 5.x** (helpers de compatibilidade; nem toda versão retestada — veja a seção acima)
-- O **jogo** *RE: Operation Raccoon City* instalado
+## 1. Abrir arquivos e pastas
+- **Abrir… → Abrir SSG / BNK / PCK**, ou **Ctrl+O**: escolha `.ssg`, backup `.bak`, `.bnk` ou `.pck`. Arquivos de mídia soltos (`.wem`, `.wav`, `.ogg`, `.mp3`, `.fsb`, `.bik`, `.bk2`, `.mp4`, `.avi`) também podem ser abertos pelo filtro **Todos**. O nome do comando principal ainda destaca os contêineres.
+- **Abrir… → Abrir pasta**, ou **Ctrl+Shift+O**: escolhe uma pasta extraída; o app a percorre sem alterar seus arquivos.
+- Aguarde **Abrindo / indexando**. A Biblioteca identifica a origem, contagem e itens. Em SSG com FM6S compatível, seleciona a primeira malha e abre Modelo automaticamente.
+- **Cancelar tarefa**, ou **Esc**, solicita interrupção segura. Aguarde o worker terminar. SSG tem limite de entrada de 1 GB e cache descompactado de 4 GB. PCK é indexado sem ler todo seu corpo e pode exceder 1 GB.
 
-Opcional (recomendado): [ORCToolKit](https://github.com/PiMoNFeeD/ORCToolKit) (MIT),
-a ferramenta GUI do PiMoNFeeD — útil para inspecionar `.ssg` manualmente.
+## 2. Biblioteca, seleção e filtros
+- **Pesquisar assets** (foco por **Ctrl+F**) filtra nomes. O seletor **Todos / Modelos / Texturas / Áudio / Vídeo / Outros** e extensões restringe a categoria. Os nomes exibidos são basenames; Propriedades mostra o caminho interno.
+- Clique um item para prévia. **Ctrl+clique** e **Shift+clique** selecionam múltiplos para extração. A prévia corresponde ao primeiro selecionado, não a todas as seleções.
+- Rodapé da Biblioteca: **Selecionado: nome** quando há seleção; **Selecione para visualizar** quando não há. Alterar filtro limpa a seleção e a prévia anterior. Busca sem resultado exibe **Nenhum resultado.**, limpa imagem/malha/propriedades e desabilita exports/reprodução irrelevantes. Limpar a busca retorna a lista; selecione novamente.
+- Abas **Modelo / Textura / Áudio / Vídeo / Informações** trocam contexto; categorias ausentes ficam desabilitadas. **Inspetor** oculta/reabre Propriedades. Arraste divisórias para ajustar largura. O mínimo de cliente 1024×680 mantém status, **Detalhes** e **Cancelar tarefa** acessíveis.
 
----
+## 3. Modelos, câmera, materiais e rig manual
+1. Selecione `.edgemodel` FM6S, versões 17/18 suportadas. **Texturizado** é escolhido quando o DDS difuso é resolvido; caso contrário, **Sólido**.
+2. Seletor **Wireframe / Sólido / Texturizado** altera a apresentação. Botão esquerdo arrastado orbita; direito ou meio arrastado move (pan); roda muda zoom; duplo clique ou **Resetar câmera** restaura a vista.
+3. Em **Propriedades → Modelos → Avançado: materiais / rig**:
+   - **Referências de material** abre Informações com materiais, referências e avisos. Volte em Modelo.
+   - **Helpers shadow** mostra geometria auxiliar identificada por nome; oculta por padrão. Ciano diagnóstico não é shader original.
+   - **Carregar esqueleto…** recebe skeleton Edge, não HKX; **Overlay esqueleto** liga/desliga a sobreposição.
+   - **Aplicar imagem guardada** atribui a imagem manual anterior a todos os materiais, sem reconstruir associação original.
+4. **Limitação importante:** esqueleto escolhido manualmente é apenas overlay das transformações armazenadas. Um rig genérico pode ter linhas/helper/root fora do personagem e não estar associado à malha. Não se afirma bind pose anatômico validado, rig nativo correto, skinning, animação ou equivalência ao render do jogo; FBX opcional sem vínculo é separado.
+5. IM6S é metadado de instância, não geometria; a prévia explica isso. Versões/strides não suportados recebem erro explícito. GPU OpenGL de hardware é obrigatória, sem fallback CPU; detalhes identificam o renderer real.
 
-## Instalação
+## 4. Texturas e imagem manual
+- Aba **Textura** ou categoria **Texturas**: selecione DDS completo, PNG, JPG/JPEG, BMP ou TGA. Roda faz zoom, arrastar move. **Ajustar** restaura enquadramento; **Pixels 1:1** faz correspondência de pixels.
+- **Exportar PNG…** abre Salvar e cria um PNG RGBA sem sobrescrever destino existente.
+- **Avançado: textura manual → Usar imagem no modelo** guarda uma cópia da imagem; depois selecione modelo e **Aplicar imagem guardada**. Isso substitui todos os materiais e pode dar resultado escuro/incorreto; não é resolução automática.
+- DDS de 4 bytes recebe **“Esta referência DDS de 4 bytes não contém pixels. Abra a textura DDS completa correspondente.”** em Informações, com hex; não vaza objeto PIL/BytesIO/endereço. A referência continua disponível para extração bruta.
 
-```bash
-git clone https://github.com/TheNordicBlizzard/orc-toolkit.git ORC-Toolkit
-cd ORC-Toolkit
-```
+## 5. Áudio e bancos
+1. Abra BNK/PCK e selecione mídia interna `.wem` em **Áudio**. A prévia é metadados/hex; não usa parser SSG nem toca áudio automaticamente. A amostra real `6970.wem` foi validada no EXE.
+2. **Reproduzir** decodifica para WAV PCM validado e solicita reprodução; **Parar** a interrompe. O QA confirma PCM não nulo, mas não mediu saída acústica/loopback.
+3. **Exportar WAV…** abre Salvar; espere **WAV exportado: caminho** antes de abrir a saída. Não sobrescreve. Configure **vgmstream-cli** para Wwise ou FFmpeg para áudio comum; limite de áudio 256 MB.
+4. **Abrir banco selecionado** abre banco físico em pasta; banco embutido deve ser extraído primeiro. Botão fica desabilitado para WEM, que não é banco.
+5. BNK DIDX/DATA e PCK AKPK são índices de mídia. Eventos HIRC, prefetch e eventos do jogo não são reconstruídos; fragmento decodificável não prova som original completo.
 
----
+## 6. Vídeo
+- Abra mídia solta com **Todos** ou a pasta que a contém, selecione **Vídeo** e o item. Ajuste **Início (s)** (número).
+- **Decodificar 10 segundos** gera quadros reais FFmpeg, até 10 s a 12 fps. A reprodução inicia após decodificar; **Reproduzir** reinicia a prévia; **Pausar** congela o quadro; **Exportar quadro PNG…** existe, mas a ação não foi verificada separadamente na cobertura frozen final; teste de PNG de textura não a comprova.
+- Não há áudio sincronizado nem reprodução integral do filme. Configure FFmpeg em Dependências. Mensagens esperadas: início não numérico, decoder recusou arquivo, nenhum quadro decodificado.
 
-## Uso rápido (assistente interativo)
+## 7. Extração segura e cancelamento
+1. **Extrair… → Extrair selecionados** copia a seleção; **Extrair todos** copia a origem inteira, inclusive itens ocultos pelo filtro.
+2. Escolha pasta fora de origem/jogo/biblioteca protegida, de preferência nova e vazia. Subpastas são preservadas; duplicatas recebem `__duplicado_1`, etc.
+3. Preflight recusa destinos existentes, paths inseguros, caracteres reservados e conflitos arquivo/diretório como `parent` versus `parent/child`, inclusive diferença de caixa no Windows, antes de escrever qualquer arquivo.
+4. **Cancelar tarefa**, ou Esc, para em pontos seguros. Concluídos ficam; somente parcial criado pela operação é removido. Aguarde status final antes de fechar. QA do EXE cancelou escrita real de arquivo próprio de 2 GiB e verificou parcial removido + hash do concluído preservado.
+5. Confira contagem e hashes quando a integridade importar. O QA selecionado/todos via diálogos nativos conferiu os 45 assets Ada e nomes duplicados; repetição no mesmo destino deu recusa e preservou hashes.
 
-A forma mais fácil: rode o **menu** e siga as opções.
+## 8. Informações, idioma e dependências
+- **Informações → Texto / hex selecionado** mostra os primeiros bytes sem ler mídia grande inteira. **Detalhes** no rodapé expande status, GPU e origem.
+- Topo **Português (Brasil) / English** traduz apresentação e persiste escolha, sem mudar nomes/dados dos assets.
+- **Configurações → Informações → Limitações / ajuda** lista os limites. GPU não é uma dependência opcional dessa tela.
+- **Configurações** usa navegação segmentada **Informações / Dependências**, sem o Notebook antigo. Informações traz limites e hardware real em cartões. O tamanho mínimo é 620×480; use a roda/rolagem para acessar conteúdo abaixo. **Salvar caminhos** permanece fora da área rolável.
+- **Dependências** agrupa FFmpeg, vgmstream-cli e Blender opcional em cartões com função, **Detecção**, caminho editável e **Selecionar…**. Campos permitem navegação horizontal e cópia do caminho completo. **Detectado** significa arquivo encontrado: não comprova versão, autenticidade ou codec compatível. Use somente executáveis confiáveis.
+- **Salvar caminhos** persiste os campos configurados e mostra **Caminhos salvos.** na própria janela. Caminho inexistente mostra erro local e não grava; falha de escrita também mostra erro sem anunciar sucesso. Cancelar o seletor preserva o campo anterior. Fechar/reabrir mantém os campos; reiniciar carrega os caminhos salvos.
+- Links agrupados: FFmpeg **Site oficial / Repositório / Gyan · terceiro**; vgmstream **Releases oficiais / Repositório**. URLs originais preservadas; navegação final no browser não foi exercitada.
 
-```bash
-python orc_menu.py
-```
+![Configurações reais de fonte isolada, sem assets](docs/screenshots/settings_pt-BR.png)
 
-> 📖 **Novo no assunto?** Veja o **[INSTALL.md](INSTALL.md)** — guia completo
-> do zero, com imagens.
 
-![Menu do assistente](docs/menu.png)
+## 9. Erros e logs
+- **Destino existente ou inseguro / já existente**: selecione nova pasta; nunca force sobrescrita. **Conflito arquivo/diretório**: nomes adversariais/incompatíveis na origem; corrija o conjunto externo, não o jogo.
+- **Destino protegido**: não use origem/jogo/biblioteca. **GPU obrigatória**: driver e GPU de hardware; não há fallback CPU. **Prévia indisponível**: confira versão FM6S, integridade ou referência DDS. **Configure vgmstream / FFmpeg**: configure executável confiável.
+- `explorer_errors.log` fica nos dados do app; cópia portable usa `ORC_Asset_Explorer_data` ao lado do EXE. Instalação reconhecida em `dist` pode usar a árvore de fonte irmã. Não envie logs sem revisar caminhos privados.
 
-```
-   1) Configurar jogo e Blender      ← detecta automaticamente
-   2) Extrair o jogo                 (.ssg -> arquivos)
-   3) Exportar modelos para FBX
-   4) Montar a Asset Library         (.blend + pastas + miniaturas)
-   5) Finalizar                      (registrar no Blender + addon)
-   6) FAZER TUDO automaticamente     ← roda 2→5 de uma vez
-   s) Ver o estado atual
-   q) Sair
-```
+## 10. Extração da instalação e exportação Blender
 
-O menu **detecta** o jogo e o Blender sozinho, salva a configuração em
-`orc_config.json` e mostra o progresso de cada etapa. Ideal para quem não quer
-mexer com linha de comando.
 
-### Compatibilidade com versões do Blender
+### Extrair uma instalação completa
+1. Use **Extrair… → Extrair jogo completo…**. Selecione a instalação, sempre somente leitura.
+2. Escolha destino **novo ou vazio fora do jogo**. Não há sobrescrita; junctions/reparse points são rejeitados. Não use biblioteca existente como destino.
+3. Escolha preservar loose relevantes. A lista explícita inclui DDS, MATB, EDGEMODEL, HKX, WEM/WAV/OGG/MP3/FSB, BIK/BK2 e PNG/TGA. SSG sempre entra no inventário. EXE, DLL, DRM, configurações e credenciais são excluídos.
+4. BNK/PCK é opcional: copie os bancos ou extraia mídia dos layouts Wwise suportados, mantendo IDs/idiomas. Não reconstrói eventos HIRC ou trilha original completa.
+5. Clique **Inventariar sem extrair**. O espaço usa tamanhos declarados de seções e reserva para cache; é estimativa, não garantia. Tamanhos desconhecidos ficam indicados. Ao mudar instalação/opções, refaça o inventário.
+6. Clique **Iniciar extração em lote**. Streaming em blocos de 1 MiB, um arquivo SSG por vez. Limites mantidos: entrada SSG 1 GiB, cache descomprimido 4 GiB. Progresso informa arquivo e quantidade de seções; falhas/cancelamento nunca viram sucesso total.
+7. **Cancelar tarefa** preserva concluídos e remove somente o parcial criado pela operação. Consulte `batch_report.json`: processados, falhas, unsupported, cancelados, não iniciados, tamanhos e SHA-256. Não há resume automático: use outro destino vazio.
 
-O toolkit legado inclui helpers para **Blender 3.x, 4.x e 5.x**; esta tarefa não retestou cada versão independentemente. As diferenças entre versões
-são tratadas automaticamente (ver `scripts/_compat.py`):
+### Exportar modelos
+1. Abra SSG/pasta extraída e selecione modelo **FM6S 17/18** real; IM6S é metadado.
+2. Use **Extrair… → Exportar modelos (Blender)…**, também no avançado recolhível de Modelos. Pode selecionar todos os FM6S da origem aberta.
+3. Configure Blender oficial em **Configurações → Dependências** se necessário. A extração bruta não depende dele. Download oficial: https://www.blender.org/download/ ; código: https://github.com/blender/blender . Detecção de existência não valida autenticidade. Testado Blender 5.0.1.
+4. Escolha FBX, blend e/ou GLB, destino novo/vazio e esqueleto opcional 20SE/ES02 ou SSG. Resolução automática procura mesmo nome na origem aberta e pasta `skel` irmã do SSG.
+5. Use **Exportar e verificar no Blender**. Um processo background por modelo, script fixo confiável e lista de argumentos sem shell/Python interpolado. Cancelamento encerra só o processo da operação, nunca Blender do usuário. Bundles concluídos e relatórios de falha ficam preservados.
+6. Mantenha a pasta inteira: `textures/*.png`, formatos escolhidos, `job.json`, `export_report.json`; agregado `model_export_report.json`. FBX/blend usam PNG externo relativo, nunca DDS empacotado; GLB embute PNG. Use **Abrir pasta de saída**.
 
-| Mudança entre versões | Como é tratado |
-|-----------------------|----------------|
-| Engine EEVEE (`BLENDER_EEVEE` vs `BLENDER_EEVEE_NEXT`) | `_compat.eevee_engine()` testa os dois |
-| Transparência (`blend_method` → `surface_render_method` em 4.2+) | `_compat.set_material_alpha()` |
-| `orphans_purge` (assinatura mudou) | `_compat.purge_orphans()` |
-| Pasta de addons (`.../Blender/<versao>/...`) | `orc_menu.addon_dir_for()` detecta a versão |
-| Normais customizadas (crash 4.1+/5.x) | `_compat.set_custom_normals()` valida antes |
+### Limites comprovados
+- Exporta posições, triângulos, UV, atribuições de material e diffuse resolvido. Não reproduz outros canais/shaders do jogo. Todos os LODs lidos ficam juntos; sem animação/separação automática. Remove somente polígonos com mesmos índices duplicados, avisando a contagem; não solda seams coincidentes. GLB pode dividir vértices.
+- Esqueleto nativo real: hierarquia, nomes e matrizes locais/globais da rest pose, validados por limites/ciclos/finitude/escala unitária. Exportado **SEM VÍNCULO** quando encontrado. FBX/blend reimportados verificam hierarquia/rest pose. Skin GLB desativado; esqueleto pode virar nós, não armature deformável.
+- **Paleta de ossos/associação skin nativa não comprovadas. Sem pesos, animação ou armature placeholder inventada.** Esqueleto encontrado não é rig deformável validado: `rig_validated: false`, zero pesos, aviso explícito.
+- Validação reabre/reimporta os arquivos reais e compara triângulos/UV (tolerância 2e-4), texturas e hierarquia/matrizes de esqueleto sem vínculo (1e-3 quando aplicável). Contagens de vértices podem mudar em FBX/GLB. Não significa compatibilidade in-game ou writer nativo round-trip.
+- Tweed instalado possui contagem inválida na tabela FM6S: extração bruta funciona, exportação de geometria rejeita honestamente. QA usa backup vanilla preservado e esqueleto real do jogo. Nenhum arquivo do jogo é reparado/alterado.
+- Não redistribua assets do jogo. Blender/decoders são dependências externas com licenças próprias. Não inclua assets/binários de dependências em Git.
 
-> O menu detecta a versão do Blender via `blender --version` e usa os caminhos certos.
 
----
+## Casos de uso e limites
 
-## Uso manual (linha de comando)
+Localize um modelo dentro de SSG, inspecione materiais/texturas, extraia uma seleção, prepare arquivos para edição externa, exporte PNG/WAV ou catalogue uma instalação/mídia por relatórios. As fontes permanecem somente leitura.
 
-Se preferir rodar cada etapa na mão, veja **[docs/PIPELINE.pt-BR.md](docs/PIPELINE.pt-BR.md)**.
-Resumo:
+Não é editor direto da instalação, player de animações, reconstrução completa de shaders/áudio interativo ou ferramenta de substituição arbitrária de personagens. Addons e writer nativo em desenvolvimento ficam fora dos downloads do release; o código experimental permanece separado no repositório.
 
-```bash
-set GAME=<pasta do jogo>
-set WORK=<pasta de trabalho>
+[Referência por função](docs/EXPLORER.pt-BR.md) · [Cobertura e lacunas](docs/COVERAGE.pt-BR.md) · [Auditoria da build](docs/RELEASE-AUDIT.md) · [Build da fonte](docs/BUILD.pt-BR.md)
 
-python scripts/01_ssg_extract.py "%GAME%" "%WORK%\ssg_unpacked"
-python scripts/02_build_index.py "%WORK%\ssg_unpacked" "%WORK%\_asset_index.json"
-```
+## Licença e créditos
 
-E assim por diante (ordem completa na documentação).
-
----
-
-## Scripts
-
-| Arquivo | Descrição |
-|---------|-----------|
-| `orc_menu.py` | **Assistente interativo** (menu) — recomenda-se começar por aqui |
-| `scripts/_compat.py` | Camada de compatibilidade entre versões do Blender |
-| `scripts/01_ssg_extract.py` | Desempacota **todos** os `.ssg` (v5/v6, zlib, retomável) |
-| `scripts/01b_ssg_extract_single.py` | Desempacota **um** `.ssg` |
-| `scripts/02_build_index.py` | Gera índice JSON de assets |
-| `scripts/03_orc_import_blender.py` | Importador Python do mantenedor, MIT; créditos históricos preservados; helpers 3.x–5.x |
-| `scripts/04_export_all_models.py` | Exporta todos os modelos p/ FBX por categoria |
-| `scripts/04b_export_characters_fbx.py` | Alternativa: 1 processo Blender por personagem |
-| `scripts/04c_batch_export.py` | Processa um lote de modelos (usado pelo 04) |
-| `scripts/04d_import_one.py` | Importa 1 modelo e exporta FBX (usado pelo 04b) |
-| `scripts/05_build_chunks.py` | Constrói a library em chunks (evita crash de memória) |
-| `scripts/06_build_library.py` | Importa FBX → `.blend` da biblioteca |
-| `scripts/07_merge_library.py` | Funde as partes num `.blend` único |
-| `scripts/08_convert_to_collections.py` | Objetos → **collection assets** (arrasto completo) |
-| `scripts/09_gen_thumbnails.py` | Gera thumbnails 320×320 |
-| `scripts/10_apply_previews.py` | Aplica thumbnails como previews dos assets |
-| `scripts/11_organize_catalogs.py` | Organiza em catálogos (Characters/Enemies/Props...) |
-| `scripts/12_make_versions.py` | Cria versões sem-props e só-props |
-| `scripts/13_fix_center_bones.py` | Centraliza modelos + ossos visíveis |
-| `scripts/14_fix_degenerate_alpha.py` | Corrige alpha degenerado (transparência) |
-| `scripts/15_register_library.py` | Registra a biblioteca no Blender |
-| `addon/orc_asset_helper.py` | Addon: deixa os assets editáveis ao arrastar |
-
-Configuração por variáveis de ambiente: `ORC_TEXDIR` (pasta de texturas),
-`ORC_LIBDIR` (pasta da biblioteca), `ORC_BLENDER` (caminho do Blender),
-`ORC_IMPORTER` (importador), `ORC_ASSET_INDEX_FILE`, `ORC_ASSET_ROOT`.
-
----
-
-## Documentação
-
-- **[docs/PIPELINE.pt-BR.md](docs/PIPELINE.pt-BR.md)** — ordem completa do pipeline, com todos os comandos
-- **[docs/FORMAT.pt-BR.md](docs/FORMAT.pt-BR.md)** — o formato `.ssg` e `.edgemodel` (Hexane Engine)
-- **[docs/TROUBLESHOOTING.pt-BR.md](docs/TROUBLESHOOTING.pt-BR.md)** — erros comuns e soluções
-
----
-
-## Créditos
-
-- **TheNordicBlizzard** — importador Python criado com outra IA, pipeline e automação; publicação autorizada sob MIT existente.
-- **[PiMoNFeeD](https://github.com/PiMoNFeeD/ORCToolKit)** — ORCToolKit e crédito histórico de referência preservado; MIT do C# não licencia automaticamente arquivo Python distribuído separadamente.
-- **Szkaradek123** — script original no fórum Xentax (do qual o de PiMoNFeeD derivou).
-- Este toolkit — o pipeline de extração, biblioteca e automação.
-
-## Licença
-
-Os scripts deste repositório estão sob **MIT** (veja `LICENSE`).
-Autoria do importador esclarecida em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Créditos históricos e avisos de trechos realmente reutilizados permanecem; coincidência não determina direção de derivação.
-
-**Assets do jogo:** © CAPCOM / Slant Six Games. Não redistribua. Use apenas com
-a sua própria cópia do jogo, para fins pessoais/educacionais.
+Código original [MIT](LICENSE), mantido por **TheNordicBlizzard**. Créditos e termos aplicáveis em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). O programa não distribui assets do jogo. Resident Evil: Operation Raccoon City e seu conteúdo são © CAPCOM / Slant Six Games; use sua própria cópia e não redistribua arquivos extraídos.

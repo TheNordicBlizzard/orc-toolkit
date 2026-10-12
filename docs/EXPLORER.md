@@ -1,6 +1,6 @@
 # ORC Asset Explorer — feature-by-feature tutorial (English)
 
-FullExport remains unpublished; the local canonical EXE and candidate now have the same independently verified SHA256. [Evidence and gaps](COVERAGE.md). Use your own read-only source files.
+Tutorial for the program published as v1.1.0-rc.1 candidate. Use your own read-only source files. Historical results and test gaps are separated by build: [coverage](COVERAGE.md) and [final audit](RELEASE-AUDIT.md).
 
 ![Actual isolated source welcome screen, no game assets](screenshots/welcome_en.png)
 
