@@ -1,0 +1,9 @@
+# Runtime requirements; not a frozen dependency lock/SBOM.
+# Use python -m pip with the same interpreter used for tests/build.
+numpy>=2.0
+Pillow>=10.0
+moderngl>=5.10
+glcontext>=3.0
+pyopengltk>=0.0.4
+PyOpenGL>=3.1
+customtkinter>=5.2

@@ -1,0 +1,108 @@
+[
+  {
+    "path": "assets/fonts/CustomTkinter_shapes_font.otf",
+    "sha256": "fad67e2b060c318b6c8646d087fbd3add938b6676243f14b0c52623179641274",
+    "names": [
+      {
+        "nameID": 0,
+        "value": " "
+      },
+      {
+        "nameID": 5,
+        "value": "Version 0.001"
+      },
+      {
+        "nameID": 8,
+        "value": " "
+      },
+      {
+        "nameID": 9,
+        "value": " "
+      },
+      {
+        "nameID": 13,
+        "value": " "
+      },
+      {
+        "nameID": 14,
+        "value": " "
+      },
+      {
+        "nameID": 0,
+        "value": " "
+      },
+      {
+        "nameID": 5,
+        "value": "Version 0.001"
+      },
+      {
+        "nameID": 8,
+        "value": " "
+      },
+      {
+        "nameID": 9,
+        "value": " "
+      },
+      {
+        "nameID": 13,
+        "value": " "
+      },
+      {
+        "nameID": 14,
+        "value": " "
+      }
+    ]
+  },
+  {
+    "path": "assets/fonts/Roboto/Roboto-Medium.ttf",
+    "sha256": "4ac8e03606ffa4c37f61a6510a2080f1f37a7054f4726c214887d3b23f72e369",
+    "names": [
+      {
+        "nameID": 0,
+        "value": "Copyright 2011 Google Inc. All Rights Reserved."
+      },
+      {
+        "nameID": 5,
+        "value": "Version 2.137; 2017"
+      },
+      {
+        "nameID": 9,
+        "value": "Google"
+      },
+      {
+        "nameID": 13,
+        "value": "Licensed under the Apache License, Version 2.0"
+      },
+      {
+        "nameID": 14,
+        "value": "http://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ]
+  },
+  {
+    "path": "assets/fonts/Roboto/Roboto-Regular.ttf",
+    "sha256": "319cff6e7a31f0f2a41c475dca42890aa5d19fe16017e2290f8c1d4e14f76481",
+    "names": [
+      {
+        "nameID": 0,
+        "value": "Copyright 2011 Google Inc. All Rights Reserved."
+      },
+      {
+        "nameID": 5,
+        "value": "Version 2.137; 2017"
+      },
+      {
+        "nameID": 9,
+        "value": "Google"
+      },
+      {
+        "nameID": 13,
+        "value": "Licensed under the Apache License, Version 2.0"
+      },
+      {
+        "nameID": 14,
+        "value": "http://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ]
+  }
+]

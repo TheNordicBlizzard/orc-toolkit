@@ -59,8 +59,7 @@ Run `python orc_menu.py` and follow the menu. Full walkthrough in `INSTALL.md`.
 
 ## Credits
 
-Built on **PiMoNFeeD's** ORCToolKit and his original Blender import script (MIT),
-plus Szkaradek123's original work. Huge thanks to them.
+Python importer created by **TheNordicBlizzard** with another AI, published under the toolkit MIT license. Historical reference credits to **PiMoNFeeD / ORCToolKit** and **Szkaradek123** are preserved; a separate C# project's MIT license is not automatically a Python importer grant.
 
 Feedback and pull requests welcome!
 ```

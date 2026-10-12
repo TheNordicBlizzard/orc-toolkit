@@ -1,15 +1,21 @@
-# RE: Operation Raccoon City — Model Extraction Toolkit
+# RE: Operation Raccoon City — Toolkit
 
-A **tested, complete** pipeline to extract models from
-*Resident Evil: Operation Raccoon City* (**Hexane Engine**, by Slant Six Games)
-and bring them into **Blender** — including skeletons, textures, and a browsable
-**Asset Library** organized by category.
+**v1.1.0-rc.1 — release candidate.** [Downloads](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.1.0-rc.1) · [First release v1.0](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.0). Source, Blender addons and a scoped Windows candidate are provided; this is not a stable or universally validated release. Install the [official Microsoft Visual C++ v14 x64 prerequisite](https://aka.ms/vc14/vc_redist.x64.exe). Read the [artifact-specific audit and test limitations](docs/RELEASE-AUDIT.md). Maintainer-owned Python importer publication is authorized under the existing MIT license; applicable third-party notices remain.
 
-> ⚠️ **This repository contains NO game assets.** Only scripts and documentation.
-> You need the game installed to extract your own files.
-> Models/textures are © CAPCOM / Slant Six Games — **personal use only**.
+[Português](README.pt-BR.md) · [Documentation index](docs/INDEX.md) · [Changelog](CHANGELOG.md)
 
-**Languages:** English (this file) · [Português (BR)](README.pt-BR.md)
+- **Explorer Windows GUI:** read-only SSG/folder/BNK/PCK, hardware GPU mesh/texture preview, optional media decoders, safe extraction, installation inventory/batch and optional Blender FBX/blend/GLB export. [Feature tutorial](docs/EXPLORER.md).
+- **Legacy menu/pipeline:** Python extraction, FBX and Blender Asset Library; already public, preserved below. [Installation](INSTALL.md) · [Pipeline](docs/PIPELINE.md).
+- **ORC Mod Tools:** separate Blender addon, isolated 1.1.2 candidate not installed; not required by Explorer. [Addon and experimental CLI](docs/ADDON.md).
+- **NativeBridge / ORC Complemento 0.1.0:** independent Blender positions-only addon and project CLI. Explorer extract → new native project → Blender position edit → new edgemodel → Explorer readback. File integration only, no automatic menu or game injection. [Complete workflow and limits](tools/native_bridge/README.md).
+
+**No game assets distributed.** Use your own copy; keep exports private. Explorer native rig is **UNBOUND**, zero weights, no animation or validated bone-palette/skin association. Ada 12 duplicate polygons are removed even in Explorer blend; not exact native topology. Addon blend behaves differently. No native in-game writer approval.
+
+Local evidence: 94 source tests, frozen candidate checks, dry inventory of 2,144 SSG and two reduced three-item batches—not a new complete game dump. [Coverage](docs/COVERAGE.md). Historical v1.0 totals below are release-note claims, not new measurements.
+
+![Real asset-free isolated source UI](docs/screenshots/welcome_en.png)
+
+Windows 11 x64 tested; hardware OpenGL 3.3+ GPU/driver for previews, writable output and enough disk/cache. Portable EXE needs no separate Python; Blender is optional for Explorer model export, required for legacy library/addon. No established fixed RAM/VRAM/CPU minimum or universal fps guarantee. [Dependencies](DEPENDENCIES.md) · [Build](docs/BUILD.md) · [Notices](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -37,7 +43,7 @@ library (Characters / Enemies / Weapons / VFX / Props), with 0 failures.
 
 - **Windows** (scripts assume Windows paths; adapt if needed)
 - **Python 3.10+** (for extraction)
-- **Blender 3.x / 4.x / 5.x** (compatible with all — see the section below)
+- **Blender 3.x / 4.x / 5.x** (compatibility helpers; see the section below)
 - The **game** *RE: Operation Raccoon City* installed
 
 Optional (recommended): [ORCToolKit](https://github.com/PiMoNFeeD/ORCToolKit) (MIT),
@@ -84,7 +90,7 @@ touch the command line.
 
 ### Blender version compatibility
 
-The toolkit works on **Blender 3.x, 4.x and 5.x**. Version differences are
+The legacy toolkit includes compatibility helpers for **Blender 3.x, 4.x and 5.x**; this documentation task did not independently retest every version. Version differences are
 handled automatically (see `scripts/_compat.py`):
 
 | Change between versions | How it's handled |
@@ -125,7 +131,7 @@ And so on (full order in the docs).
 | `scripts/01_ssg_extract.py` | Unpacks **all** `.ssg` (v5/v6, zlib, resumable) |
 | `scripts/01b_ssg_extract_single.py` | Unpacks a **single** `.ssg` |
 | `scripts/02_build_index.py` | Builds a JSON asset index |
-| `scripts/03_orc_import_blender.py` | Imports `.edgemodel` into Blender (PiMoNFeeD, MIT; 3.x–5.x) |
+| `scripts/03_orc_import_blender.py` | Maintainer-owned Python importer, MIT; historical credits preserved; 3.x–5.x helpers |
 | `scripts/04_export_all_models.py` | Exports all models to FBX by category |
 | `scripts/04b_export_characters_fbx.py` | Alternative: one Blender process per character |
 | `scripts/04c_batch_export.py` | Processes a batch of models (used by 04) |
@@ -160,15 +166,15 @@ Environment variables: `ORC_TEXDIR` (textures folder),
 
 ## Credits
 
-- **[PiMoNFeeD](https://github.com/PiMoNFeeD/ORCToolKit)** — ORCToolKit + the original
-  Blender import script (MIT). Foundation of the whole importer.
+- **TheNordicBlizzard** — Python importer created with another AI, toolkit pipeline and automation; publication authorized under the existing MIT license.
+- **[PiMoNFeeD](https://github.com/PiMoNFeeD/ORCToolKit)** — ORCToolKit and preserved historical reference credit; its C# MIT license is not automatically the license of a separately distributed Python file.
 - **Szkaradek123** — original script on the Xentax forum (from which PiMoNFeeD's derived).
 - This toolkit — the extraction pipeline, library builder, and automation.
 
 ## License
 
 The scripts in this repository are under **MIT** (see `LICENSE`).
-`03_orc_import_blender.py` derives from PiMoNFeeD's work (MIT) — credits preserved.
+Importer authorship is clarified in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Historical credits and notices for actual reused portions remain; code similarity alone does not establish derivation direction.
 
 **Game assets:** © CAPCOM / Slant Six Games. Do not redistribute. Use only with
 your own copy of the game, for personal/educational purposes.

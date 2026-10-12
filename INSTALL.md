@@ -1,6 +1,7 @@
 # Installation & Usage Guide — step by step
 
 A complete guide for first-time users. From zero to models in Blender.
+The steps below preserve the existing menu/library workflow. The separate [Explorer tutorial](docs/EXPLORER.md) and [NativeBridge install/project workflow](tools/native_bridge/README.md) are candidate features; no new release download is asserted. NativeBridge does not replace the installed addon, automatically integrate a menu, or overwrite native templates.
 
 > **Before anything:** this toolkit includes **no game models**. You extract from
 > **your own copy** of *RE: Operation Raccoon City*. Assets © CAPCOM/Slant Six.
@@ -133,7 +134,7 @@ somehow comes in locked, use the **"Tornar Assets ORC Editáveis"** button in th
 | Dragging brings an empty | Drag the **collection** (folder), not the object |
 | Blender crashes opening the library | Close other programs (the library uses ~4 GB RAM) |
 
-More details in **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**.
+More details in **[TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)**.
 
 ---
 

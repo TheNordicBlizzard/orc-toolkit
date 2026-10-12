@@ -1,0 +1,1415 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "ORC Asset Explorer redistributable candidate native inventory",
+  "documentNamespace": "https://orc-toolkit.invalid/sbom/9a2838277bb9cd9520a9d18fa95d447c4d2a9380b7abe6e7b7be204d2d752555",
+  "creationInfo": {
+    "creators": [
+      "Tool: CArchive native audit"
+    ],
+    "created": "2026-10-12T05:01:31Z"
+  },
+  "files": [
+    {
+      "fileName": "PIL/_avif.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8bd3032b72992a8166144a4063bae4a55c0f178d237454f17102301731e912a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_imaging.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d823c0e3b54035d08703bb427c553c956c2607b79395f2952e17a5447c5f1105"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_imagingcms.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dff90929dbeb9d51eebf09f4454d0beb65775f7644145a63d66fa8ca9f5a96fd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_imagingft.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93c3ca5a3e7119897be9825a0a4228d485410fc8f1e42257edf7e89052c79bce"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_imagingmath.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a7b3d6e462d338744694bc332f9f6f9c5717d532b7a74ad2762b3289521d0d9e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_imagingtk.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "79208042672ff0b9e3669d5078ad35413470861e783feeaf1430458c41036593"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "PIL/_webp.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f4d851381d1bd937753ba78e951c96a85f3a6c5ac402beec23fc13fdb6d45198"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Pillow 12.3.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_asyncio.pyd",
+      "SPDXID": "SPDXRef-File-7",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "289a1dfc062d7df798c0fdc70e17c8d1a9f4d2940248ecf960bb29358fa653a6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_bz2.pyd",
+      "SPDXID": "SPDXRef-File-8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f93a173880611773ac8047b5fe17b14cb5985eccff0407a5cc1b889156c5f437"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_ctypes.pyd",
+      "SPDXID": "SPDXRef-File-9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a00a1988e4b7a87b63b85e1264cb240b5e927975331d660717696b4bb30e2aee"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_decimal.pyd",
+      "SPDXID": "SPDXRef-File-10",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "98296200b768ab9e6bdce327f08c209b080ff33cc4d71ea738a1a69f0bb88672"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_elementtree.pyd",
+      "SPDXID": "SPDXRef-File-11",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "54af3c91b22279dc1198bf3eaf14353e8b214a4a58cbb031ec2ddb9dc774abb7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_hashlib.pyd",
+      "SPDXID": "SPDXRef-File-12",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "01031c44a31dbb0055b8093a494e05c13d767c100ad83df44c8253ee25f113d1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_lzma.pyd",
+      "SPDXID": "SPDXRef-File-13",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da2f68d296d9e0c205c93c34a3796c9bfaeb54ddd2c830120e0dd4aa5f3fb44f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_multiprocessing.pyd",
+      "SPDXID": "SPDXRef-File-14",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37f9ea41ca2a19b8fd51157c48e7eb7e3010a30daa2e1f58e35c3a2525cf7c0b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_overlapped.pyd",
+      "SPDXID": "SPDXRef-File-15",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a13c99aeb7850ec220d361ae1b70da63c61903316d38d65e7dea4c9da3e15622"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_queue.pyd",
+      "SPDXID": "SPDXRef-File-16",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e78750872d86eccbf8e7af32360402def55bda78bfab8596550d137414c4e847"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_socket.pyd",
+      "SPDXID": "SPDXRef-File-17",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "627d749f9991eec5d00c25b4e4686bd58db65c9c02695fac5171f941baced430"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_ssl.pyd",
+      "SPDXID": "SPDXRef-File-18",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5e74fe5129edc9bc788f8b49408623fd2caba285ae29dc5a2b6577bf80c40030"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_tkinter.pyd",
+      "SPDXID": "SPDXRef-File-19",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cce752b2a25e2cb3605e802ac809ce04dcfe3bc4ce1671bed84b60a3a3bcca86"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_uuid.pyd",
+      "SPDXID": "SPDXRef-File-20",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ca1adac60ce3686d6015c22cd6b26c92e2d1dd36f0776699d9f3d112497c16f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_wmi.pyd",
+      "SPDXID": "SPDXRef-File-21",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1db7efa2255b61119d35ca7c32c059067f85cf81fc1b3d4794c344ad89adc1e1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "_zstd.pyd",
+      "SPDXID": "SPDXRef-File-22",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3423570703f480f579f3f0693c17ace5505ec0f179ff43e4f96304b2cbecc984"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "glcontext/wgl.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-23",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59a7e223b388a771797e5465cc7e23cafcd658195cd6ec7e0af218e3bff6df8d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "glcontext 3.1.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "libcrypto-3-x64.dll",
+      "SPDXID": "SPDXRef-File-24",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6dadf2c701b8c991935222133ae0c789e2afeb444132aee79156591101c46d86"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "OpenSSL 3.5.8; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "libffi-8.dll",
+      "SPDXID": "SPDXRef-File-25",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "73283163794d6c13684c91460247b7d03598a2e0550085daf125b12321aa37bd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "libffi 3.4.2 (CPython source-deps 16fad4855b3d8c03b5910e405ff3a04395b39a98); exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "libssl-3-x64.dll",
+      "SPDXID": "SPDXRef-File-26",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27cbeebacf0889dc91c69e17105415606a3c12f2bb9c1d9053b434b36d3bcdab"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "OpenSSL 3.5.8; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "libtommath.dll",
+      "SPDXID": "SPDXRef-File-27",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2d760fefb452665b6af8c8d9d29f3a8378f10fc0847cdd9938ea0cb5edf1d573"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "LibTomMath Tcl/Tk 9.0.4 bundled snapshot, binary repo 907f3f4de820cb74fc8fb4431a39beae4c690915; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "moderngl/mgl.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-28",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "69d8e2eab9b19af322e49c28e65443549b604d981c3d6f9c9f2f5ea39061ced4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "moderngl 5.13.0; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy.libs/libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll",
+      "SPDXID": "SPDXRef-File-29",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "327b2e0bcffce2882e0dc04cdeb4eaa6382ed4dba29871b6176fa157782f484a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-30",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fe121618c00ec9066a46d9613d78e6520c52e87aeaec30ef5695eadc69d03a73"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-31",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a6755d3fcc31b0fa0f891a715b9674f592be67c78bd8bc7a66cc8b678acdf6f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-32",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c3e3671d613c98a54518b0980118198fe630a4be578951cfd3a85f3fb5efa646"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-33",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80b2fd55ef96eec642b7bd2b2b11924342588ebcdc6a1b53bfdd86037d634980"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-34",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6efca2c7b78c443ce714a54b9bf85d0d2f3042ff0b2cf8c56343aad052b15cad"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_common.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-35",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fea835c45737c1256336cf44ccac3fdae2b121b71c0ef72c91c6586b582a1dea"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_generator.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-36",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "86a6d563297ec7397b34273d70302e421ac367ccff8ec380425ad8358d6f753e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_mt19937.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-37",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15d8050da660c0714e7a68e944fe064ca9edb3b5631b148383ebc58566edca85"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_pcg64.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-38",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "841ddc84e72cf199c5c84b9bd5d044bee856572643f01b1d34abb0f6260da2bf"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_philox.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-39",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "24ffeb7f2c9295f407f2a306db5807a0001345af7c5b12442cab9020f6bceebf"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/_sfc64.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-40",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32def854df75a24f60e5b1d1745742e5c487ccab598bc5f51d93f0c6841a2c09"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/bit_generator.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-41",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "98b79117865ee8d9df4f424b6bc7ba096b66c856c7054b0f73ef561b074ad52d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "numpy/random/mtrand.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-42",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "263d1716120fd1bcc7d5f44a85aa712f76f7dc09335f44591d4e98d3f47eb855"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "numpy 2.5.2; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "pyexpat.pyd",
+      "SPDXID": "SPDXRef-File-43",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4154ecccb8f839db1f4400a58d111a00bd794547be774f88fd186e845a9f3898"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "python314.dll",
+      "SPDXID": "SPDXRef-File-44",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bfb7f74a7ae69a5ab7029a30ce0424ff351c2ae63a9758444e9ff85c00169cda"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "select.pyd",
+      "SPDXID": "SPDXRef-File-45",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f20265e11de09bcacc99c0902e2cd886919fe83467a0acbcac866bcc29381d7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "tcl90.dll",
+      "SPDXID": "SPDXRef-File-46",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a1fb45f963b05cb083a97df1449c2023b484eb921d40a463da7501b0f60e0f70"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Tcl 9.0.4; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "tcl9tk90.dll",
+      "SPDXID": "SPDXRef-File-47",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31f625c52e65d29d126e710ed8bab2ec964cb770e4fc59bc329dfff02cb6ddcf"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "Tk 9.0.4; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "unicodedata.pyd",
+      "SPDXID": "SPDXRef-File-48",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0fc4a1ba14f0ff4f08de026b5698878f85f7b023be6b73bd1ec2ea47a2b84b1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "winsound.pyd",
+      "SPDXID": "SPDXRef-File-49",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "657b0f3eef8090009c03c804e18ba35174610c618ed2b7bf845a1bdc5d53124d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "CPython 3.14.7; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "yaml/_yaml.cp314-win_amd64.pyd",
+      "SPDXID": "SPDXRef-File-50",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ef5cde08b05f7c8222a458fa49ca5ec891e54d4c721ffdbe1d6a609e26a26718"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "PyYAML 6.0.3; exact notices and provenance in compliance_manifest.json"
+    },
+    {
+      "fileName": "zlib1.dll",
+      "SPDXID": "SPDXRef-File-51",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f07195206534ebb1fe75093d4ec6c54a7a9227281b0c09d2113465b71da9e900"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "zlib 1.3.2; exact notices and provenance in compliance_manifest.json"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-10"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-11"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-12"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-13"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-14"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-16"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-17"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-18"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-19"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-20"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-21"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-22"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-23"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-3",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-24"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-4",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-25"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-3",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-26"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-27"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-6",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-28"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-29"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-30"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-31"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-32"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-33"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-34"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-35"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-36"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-37"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-38"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-39"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-40"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-41"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-42"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-43"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-44"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-45"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-8",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-46"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-47"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-48"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-49"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-10",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-50"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-11",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-51"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-4"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-5"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-6"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-7"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-8"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-9"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-10"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-11"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-12"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-13"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-14"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-15"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-16"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-17"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-18"
+    }
+  ],
+  "packages": [
+    {
+      "name": "Pillow",
+      "SPDXID": "SPDXRef-Package-0",
+      "versionInfo": "12.3.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "CPython",
+      "SPDXID": "SPDXRef-Package-1",
+      "versionInfo": "3.14.7",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "glcontext",
+      "SPDXID": "SPDXRef-Package-2",
+      "versionInfo": "3.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "OpenSSL",
+      "SPDXID": "SPDXRef-Package-3",
+      "versionInfo": "3.5.8",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "libffi",
+      "SPDXID": "SPDXRef-Package-4",
+      "versionInfo": "3.4.2 (CPython source-deps 16fad4855b3d8c03b5910e405ff3a04395b39a98)",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "LibTomMath",
+      "SPDXID": "SPDXRef-Package-5",
+      "versionInfo": "Tcl/Tk 9.0.4 bundled snapshot, binary repo 907f3f4de820cb74fc8fb4431a39beae4c690915",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "moderngl",
+      "SPDXID": "SPDXRef-Package-6",
+      "versionInfo": "5.13.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "numpy",
+      "SPDXID": "SPDXRef-Package-7",
+      "versionInfo": "2.5.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "Tcl",
+      "SPDXID": "SPDXRef-Package-8",
+      "versionInfo": "9.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "Tk",
+      "SPDXID": "SPDXRef-Package-9",
+      "versionInfo": "9.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "PyYAML",
+      "SPDXID": "SPDXRef-Package-10",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "zlib",
+      "SPDXID": "SPDXRef-Package-11",
+      "versionInfo": "1.3.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "pyopengltk",
+      "SPDXID": "SPDXRef-Package-12",
+      "versionInfo": "0.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "PyOpenGL",
+      "SPDXID": "SPDXRef-Package-13",
+      "versionInfo": "3.1.10",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "customtkinter",
+      "SPDXID": "SPDXRef-Package-14",
+      "versionInfo": "6.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "darkdetect",
+      "SPDXID": "SPDXRef-Package-15",
+      "versionInfo": "0.8.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "packaging",
+      "SPDXID": "SPDXRef-Package-16",
+      "versionInfo": "26.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "PyInstaller",
+      "SPDXID": "SPDXRef-Package-17",
+      "versionInfo": "6.22.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    },
+    {
+      "name": "Roboto",
+      "SPDXID": "SPDXRef-Package-18",
+      "versionInfo": "2.137; 2017 (both bundled TTF name tables)",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Exact grants/notices/provenance and any open limit are recorded in compliance_manifest.json"
+    }
+  ]
+}

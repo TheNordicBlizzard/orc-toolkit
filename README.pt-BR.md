@@ -1,13 +1,22 @@
-# RE: Operation Raccoon City — Toolkit de Extração de Modelos
+# RE: Operation Raccoon City — Toolkit
 
-Pipeline **testado e completo** para extrair os modelos do
-*Resident Evil: Operation Raccoon City* (motor **Hexane Engine**, da Slant Six Games)
-e montá-los no **Blender** — incluindo esqueletos, texturas e uma **Asset Library**
-navegável por categorias.
+**v1.1.0-rc.1 — candidata de lançamento.** [Downloads](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.1.0-rc.1) · [Primeiro release v1.0](https://github.com/TheNordicBlizzard/orc-toolkit/releases/tag/v1.0). Fonte, addons Blender e candidata Windows com cobertura delimitada; não é uma versão estável ou universalmente validada. Instale o [pré-requisito Microsoft Visual C++ v14 x64 oficial](https://aka.ms/vc14/vc_redist.x64.exe). Leia a [auditoria do artefato e as lacunas de teste](docs/RELEASE-AUDIT.md). O importador Python pertence ao mantenedor e foi autorizado sob MIT existente; avisos aplicáveis de terceiros permanecem.
 
-> ⚠️ **Este repositório NÃO contém assets do jogo.** Apenas scripts e documentação.
-> Você precisa ter o jogo instalado para extrair seus próprios arquivos.
-> Modelos/texturas são © CAPCOM / Slant Six Games — **uso pessoal apenas**.
+[English](README.md) · [Índice da documentação](docs/INDEX.pt-BR.md) · [Histórico](CHANGELOG.pt-BR.md)
+
+Fluxos separados:
+- **GUI Explorer Windows:** SSG/pasta/BNK/PCK somente leitura, prévia GPU de malha/textura, mídia via decoders opcionais, extração segura, inventário/lote da instalação; FBX/blend/GLB via Blender opcional. [Tutorial por função](docs/EXPLORER.pt-BR.md).
+- **Menu/pipeline legado:** extração Python, FBX e Asset Library Blender. Já público; preservado abaixo. [Instalação](INSTALL.pt-BR.md) · [Pipeline](docs/PIPELINE.pt-BR.md).
+- **ORC Mod Tools:** addon Blender separado, candidato isolado 1.1.2 não instalado; Explorer não depende dele. [Guia e limites CLI experimental](docs/ADDON.pt-BR.md).
+- **NativeBridge / ORC Complemento 0.1.0:** addon Blender independente somente posições e CLI de projeto. Extrair Explorer → projeto nativo novo → editar posições Blender → novo edgemodel → reler Explorer. Contrato por arquivos, sem menu automático ou injeção no jogo. [Fluxo completo e limites](tools/native_bridge/README.pt-BR.md).
+
+**Sem distribuição de assets do jogo.** Use sua própria cópia e mantenha extraídos privados. Rig nativo **SEM VÍNCULO**, zero pesos no Explorer; sem animação, paleta skin validada ou promessa de writer in-game. Explorer remove triângulos duplicados Ada inclusive no blend; não é topologia nativa exata.
+
+Evidência local registra 94 testes de fonte e checks do candidato frozen, inventário seco de 2.144 SSG e dois lotes reduzidos de três itens—não uma nova extração completa do jogo. Consulte [cobertura](docs/COVERAGE.pt-BR.md). Totais históricos v1.0 abaixo são alegações das notas do release, não novas medições.
+
+![Interface real de fonte sem assets](docs/screenshots/welcome_pt-BR.png)
+
+**Requisitos:** Windows 11 x64 testado, GPU/driver OpenGL 3.3+ de hardware para prévias, saída gravável e disco/cache suficiente. EXE portable dispensa instalação separada de Python; Blender é opcional para exportar modelos, obrigatório para biblioteca legada/addon. Não se estabeleceu mínimo fixo RAM/VRAM/CPU nem garantia universal de fps. [Dependências](DEPENDENCIES.md) · [Build/portabilidade](docs/BUILD.pt-BR.md) · [Avisos](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -35,7 +44,7 @@ biblioteca (Characters / Enemies / Weapons / VFX / Props), com 0 falhas.
 
 - **Windows** (os scripts assumem caminhos do Windows; adapte se necessário)
 - **Python 3.10+** (para a extração)
-- **Blender 3.x / 4.x / 5.x** (compatível com todas — veja a seção acima)
+- **Blender 3.x / 4.x / 5.x** (helpers de compatibilidade; nem toda versão retestada — veja a seção acima)
 - O **jogo** *RE: Operation Raccoon City* instalado
 
 Opcional (recomendado): [ORCToolKit](https://github.com/PiMoNFeeD/ORCToolKit) (MIT),
@@ -46,7 +55,7 @@ a ferramenta GUI do PiMoNFeeD — útil para inspecionar `.ssg` manualmente.
 ## Instalação
 
 ```bash
-git clone <este-repo> ORC-Toolkit
+git clone https://github.com/TheNordicBlizzard/orc-toolkit.git ORC-Toolkit
 cd ORC-Toolkit
 ```
 
@@ -82,7 +91,7 @@ mexer com linha de comando.
 
 ### Compatibilidade com versões do Blender
 
-O toolkit funciona em **Blender 3.x, 4.x e 5.x**. As diferenças entre versões
+O toolkit legado inclui helpers para **Blender 3.x, 4.x e 5.x**; esta tarefa não retestou cada versão independentemente. As diferenças entre versões
 são tratadas automaticamente (ver `scripts/_compat.py`):
 
 | Mudança entre versões | Como é tratado |
@@ -99,7 +108,7 @@ são tratadas automaticamente (ver `scripts/_compat.py`):
 
 ## Uso manual (linha de comando)
 
-Se preferir rodar cada etapa na mão, veja **[docs/PIPELINE.md](docs/PIPELINE.md)**.
+Se preferir rodar cada etapa na mão, veja **[docs/PIPELINE.pt-BR.md](docs/PIPELINE.pt-BR.md)**.
 Resumo:
 
 ```bash
@@ -123,7 +132,7 @@ E assim por diante (ordem completa na documentação).
 | `scripts/01_ssg_extract.py` | Desempacota **todos** os `.ssg` (v5/v6, zlib, retomável) |
 | `scripts/01b_ssg_extract_single.py` | Desempacota **um** `.ssg` |
 | `scripts/02_build_index.py` | Gera índice JSON de assets |
-| `scripts/03_orc_import_blender.py` | Importa `.edgemodel` no Blender (PiMoNFeeD, MIT; compat. 3.x–5.x) |
+| `scripts/03_orc_import_blender.py` | Importador Python do mantenedor, MIT; créditos históricos preservados; helpers 3.x–5.x |
 | `scripts/04_export_all_models.py` | Exporta todos os modelos p/ FBX por categoria |
 | `scripts/04b_export_characters_fbx.py` | Alternativa: 1 processo Blender por personagem |
 | `scripts/04c_batch_export.py` | Processa um lote de modelos (usado pelo 04) |
@@ -149,23 +158,23 @@ Configuração por variáveis de ambiente: `ORC_TEXDIR` (pasta de texturas),
 
 ## Documentação
 
-- **[docs/PIPELINE.md](docs/PIPELINE.md)** — ordem completa do pipeline, com todos os comandos
-- **[docs/FORMAT.md](docs/FORMAT.md)** — o formato `.ssg` e `.edgemodel` (Hexane Engine)
-- **[docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)** — erros comuns e soluções
+- **[docs/PIPELINE.pt-BR.md](docs/PIPELINE.pt-BR.md)** — ordem completa do pipeline, com todos os comandos
+- **[docs/FORMAT.pt-BR.md](docs/FORMAT.pt-BR.md)** — o formato `.ssg` e `.edgemodel` (Hexane Engine)
+- **[docs/TROUBLESHOOTING.pt-BR.md](docs/TROUBLESHOOTING.pt-BR.md)** — erros comuns e soluções
 
 ---
 
 ## Créditos
 
-- **[PiMoNFeeD](https://github.com/PiMoNFeeD/ORCToolKit)** — ORCToolKit + o script de
-  importação original para Blender (MIT). Base de todo o importador.
+- **TheNordicBlizzard** — importador Python criado com outra IA, pipeline e automação; publicação autorizada sob MIT existente.
+- **[PiMoNFeeD](https://github.com/PiMoNFeeD/ORCToolKit)** — ORCToolKit e crédito histórico de referência preservado; MIT do C# não licencia automaticamente arquivo Python distribuído separadamente.
 - **Szkaradek123** — script original no fórum Xentax (do qual o de PiMoNFeeD derivou).
 - Este toolkit — o pipeline de extração, biblioteca e automação.
 
 ## Licença
 
 Os scripts deste repositório estão sob **MIT** (veja `LICENSE`).
-O `03_orc_import_blender.py` deriva do trabalho de PiMoNFeeD (MIT) — créditos mantidos.
+Autoria do importador esclarecida em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Créditos históricos e avisos de trechos realmente reutilizados permanecem; coincidência não determina direção de derivação.
 
 **Assets do jogo:** © CAPCOM / Slant Six Games. Não redistribua. Use apenas com
 a sua própria cópia do jogo, para fins pessoais/educacionais.

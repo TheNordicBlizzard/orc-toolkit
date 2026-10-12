@@ -1,6 +1,7 @@
 # Guia de Instalação e Uso — passo a passo
 
 Guia completo para quem nunca usou o toolkit. Do zero até os modelos no Blender.
+As etapas abaixo preservam o menu/biblioteca existente. [Tutorial Explorer](docs/EXPLORER.pt-BR.md) e [instalação/projeto NativeBridge](tools/native_bridge/README.pt-BR.md) são fluxos candidatos separados, sem alegar download novo publicado. NativeBridge não substitui addon instalado, não integra menu automaticamente nem sobrescreve templates nativos.
 
 > **Antes de tudo:** este toolkit **não inclui** nenhum modelo do jogo. Você extrai
 > da **sua própria cópia** de *RE: Operation Raccoon City*. Assets © CAPCOM/Slant Six.
@@ -23,7 +24,7 @@ Guia completo para quem nunca usou o toolkit. Do zero até os modelos no Blender
 
 - **Opção A (git):**
   ```bash
-  git clone https://github.com/SEU_USUARIO/orc-toolkit.git
+  git clone https://github.com/TheNordicBlizzard/orc-toolkit.git
   cd orc-toolkit
   ```
 - **Opção B (zip):** baixe o `ORC-Toolkit.zip` e extraia numa pasta, ex.: `C:\ORC-Toolkit`.
@@ -40,7 +41,7 @@ python orc_menu.py
 
 Você verá o menu:
 
-![Menu do assistente](menu.png)
+![Menu do assistente](docs/menu.png)
 
 > No **Windows**, se der erro de "python não reconhecido", use `py orc_menu.py`.
 
@@ -131,7 +132,7 @@ algum motivo vier travado, use o botão **"Tornar Assets ORC Editáveis"** na ab
 | Arrastar traz só um vazio | Arraste a **coleção** (pasta), não o objeto |
 | Blender trava ao abrir a library | Feche outros programas (a library usa ~4 GB de RAM) |
 
-Mais detalhes em **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**.
+Mais detalhes em **[TROUBLESHOOTING.pt-BR.md](docs/TROUBLESHOOTING.pt-BR.md)**.
 
 ---
 

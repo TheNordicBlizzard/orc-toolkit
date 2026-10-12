@@ -1,0 +1,3257 @@
+{
+  "audit_type": "Artifact-specific notice/provenance review, not legal assurance",
+  "exe_sha256": "9a2838277bb9cd9520a9d18fa95d447c4d2a9380b7abe6e7b7be204d2d752555",
+  "native_count": 52,
+  "native_files": [
+    {
+      "path": "PIL/_avif.cp314-win_amd64.pyd",
+      "sha256": "d8bd3032b72992a8166144a4063bae4a55c0f178d237454f17102301731e912a",
+      "bytes": 7890432,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_avif.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_imaging.cp314-win_amd64.pyd",
+      "sha256": "d823c0e3b54035d08703bb427c553c956c2607b79395f2952e17a5447c5f1105",
+      "bytes": 2627072,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "USER32.dll",
+        "GDI32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_imaging.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_imagingcms.cp314-win_amd64.pyd",
+      "sha256": "dff90929dbeb9d51eebf09f4454d0beb65775f7644145a63d66fa8ca9f5a96fd",
+      "bytes": 272384,
+      "architecture": "x64",
+      "imports": [
+        "USER32.dll",
+        "GDI32.dll",
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_imagingcms.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_imagingft.cp314-win_amd64.pyd",
+      "sha256": "93c3ca5a3e7119897be9825a0a4228d485410fc8f1e42257edf7e89052c79bce",
+      "bytes": 2171392,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_imagingft.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_imagingmath.cp314-win_amd64.pyd",
+      "sha256": "a7b3d6e462d338744694bc332f9f6f9c5717d532b7a74ad2762b3289521d0d9e",
+      "bytes": 21504,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_imagingmath.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_imagingtk.cp314-win_amd64.pyd",
+      "sha256": "79208042672ff0b9e3669d5078ad35413470861e783feeaf1430458c41036593",
+      "bytes": 14848,
+      "architecture": "x64",
+      "imports": [
+        "PSAPI.DLL",
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_imagingtk.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "PIL/_webp.cp314-win_amd64.pyd",
+      "sha256": "f4d851381d1bd937753ba78e951c96a85f3a6c5ac402beec23fc13fdb6d45198",
+      "bytes": 416256,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "source_url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d",
+        "source_entry": "PIL/_webp.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "12.3.0",
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "Pillow"
+    },
+    {
+      "path": "_asyncio.pyd",
+      "sha256": "289a1dfc062d7df798c0fdc70e17c8d1a9f4d2940248ecf960bb29358fa653a6",
+      "bytes": 64000,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_asyncio.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_asyncio.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_bz2.pyd",
+      "sha256": "f93a173880611773ac8047b5fe17b14cb5985eccff0407a5cc1b889156c5f437",
+      "bytes": 73216,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_bz2.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_bz2.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_ctypes.pyd",
+      "sha256": "a00a1988e4b7a87b63b85e1264cb240b5e927975331d660717696b4bb30e2aee",
+      "bytes": 130560,
+      "architecture": "x64",
+      "imports": [
+        "libffi-8.dll",
+        "ole32.dll",
+        "OLEAUT32.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_ctypes.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_ctypes.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_decimal.pyd",
+      "sha256": "98296200b768ab9e6bdce327f08c209b080ff33cc4d71ea738a1a69f0bb88672",
+      "bytes": 275968,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_decimal.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_decimal.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_elementtree.pyd",
+      "sha256": "54af3c91b22279dc1198bf3eaf14353e8b214a4a58cbb031ec2ddb9dc774abb7",
+      "bytes": 124928,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_elementtree.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_elementtree.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_hashlib.pyd",
+      "sha256": "01031c44a31dbb0055b8093a494e05c13d767c100ad83df44c8253ee25f113d1",
+      "bytes": 55296,
+      "architecture": "x64",
+      "imports": [
+        "libcrypto-3-x64.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_hashlib.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_hashlib.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_lzma.pyd",
+      "sha256": "da2f68d296d9e0c205c93c34a3796c9bfaeb54ddd2c830120e0dd4aa5f3fb44f",
+      "bytes": 152576,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_lzma.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_lzma.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_multiprocessing.pyd",
+      "sha256": "37f9ea41ca2a19b8fd51157c48e7eb7e3010a30daa2e1f58e35c3a2525cf7c0b",
+      "bytes": 24576,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_multiprocessing.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_multiprocessing.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_overlapped.pyd",
+      "sha256": "a13c99aeb7850ec220d361ae1b70da63c61903316d38d65e7dea4c9da3e15622",
+      "bytes": 44032,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_overlapped.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_overlapped.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_queue.pyd",
+      "sha256": "e78750872d86eccbf8e7af32360402def55bda78bfab8596550d137414c4e847",
+      "bytes": 23040,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_queue.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_queue.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_socket.pyd",
+      "sha256": "627d749f9991eec5d00c25b4e4686bd58db65c9c02695fac5171f941baced430",
+      "bytes": 73216,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "IPHLPAPI.DLL",
+        "RPCRT4.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_socket.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_socket.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_ssl.pyd",
+      "sha256": "5e74fe5129edc9bc788f8b49408623fd2caba285ae29dc5a2b6577bf80c40030",
+      "bytes": 176128,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "CRYPT32.dll",
+        "libcrypto-3-x64.dll",
+        "libssl-3-x64.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_ssl.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_ssl.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_tkinter.pyd",
+      "sha256": "cce752b2a25e2cb3605e802ac809ce04dcfe3bc4ce1671bed84b60a3a3bcca86",
+      "bytes": 57856,
+      "architecture": "x64",
+      "imports": [
+        "tcl90.dll",
+        "tcl9tk90.dll",
+        "libtommath.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_tkinter.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_tkinter.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_uuid.pyd",
+      "sha256": "1ca1adac60ce3686d6015c22cd6b26c92e2d1dd36f0776699d9f3d112497c16f",
+      "bytes": 13824,
+      "architecture": "x64",
+      "imports": [
+        "RPCRT4.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_uuid.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_uuid.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_wmi.pyd",
+      "sha256": "1db7efa2255b61119d35ca7c32c059067f85cf81fc1b3d4794c344ad89adc1e1",
+      "bytes": 25600,
+      "architecture": "x64",
+      "imports": [
+        "PROPSYS.dll",
+        "OLEAUT32.dll",
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140_1.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_wmi.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_wmi.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "_zstd.pyd",
+      "sha256": "3423570703f480f579f3f0693c17ace5505ec0f179ff43e4f96304b2cbecc984",
+      "bytes": 489472,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_zstd.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/_zstd.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "glcontext/wgl.cp314-win_amd64.pyd",
+      "sha256": "59a7e223b388a771797e5465cc7e23cafcd658195cd6ec7e0af218e3bff6df8d",
+      "bytes": 15360,
+      "architecture": "x64",
+      "imports": [
+        "USER32.dll",
+        "GDI32.dll",
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "glcontext",
+        "version": "3.1.0",
+        "source_url": "https://files.pythonhosted.org/packages/79/13/7b5fa7f75e9b05b6d15614bf4424211233b2274435e0adda265daab78058/glcontext-3.1.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "ec2f1678fe91b788569b02fdd58e9309e372f176b1acd606ba0bc383c1043f40",
+        "source_entry": "glcontext/wgl.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.1.0",
+      "license_files": [
+        "glcontext/glcontext-3.1.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "glcontext"
+    },
+    {
+      "path": "libcrypto-3-x64.dll",
+      "sha256": "6dadf2c701b8c991935222133ae0c789e2afeb444132aee79156591101c46d86",
+      "bytes": 7987712,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "ADVAPI32.dll",
+        "CRYPT32.dll",
+        "USER32.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "The OpenSSL Project, https://www.openssl.org/",
+        "FileDescription": "OpenSSL library",
+        "FileVersion": "3.5.8",
+        "InternalName": "libcrypto",
+        "OriginalFilename": "libcrypto",
+        "ProductName": "The OpenSSL Toolkit",
+        "ProductVersion": "3.5.8",
+        "LegalCopyright": "Copyright 1998-2026 The OpenSSL Authors. All rights reserved."
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/libcrypto-3-x64.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.5.8",
+      "license_files": [
+        "OpenSSL/LICENSE.txt"
+      ],
+      "component": "OpenSSL"
+    },
+    {
+      "path": "libffi-8.dll",
+      "sha256": "73283163794d6c13684c91460247b7d03598a2e0550085daf125b12321aa37bd",
+      "bytes": 28160,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/libffi-8.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.4.2 (CPython source-deps 16fad4855b3d8c03b5910e405ff3a04395b39a98)",
+      "license_files": [
+        "libffi/LICENSE"
+      ],
+      "component": "libffi"
+    },
+    {
+      "path": "libssl-3-x64.dll",
+      "sha256": "27cbeebacf0889dc91c69e17105415606a3c12f2bb9c1d9053b434b36d3bcdab",
+      "bytes": 1583616,
+      "architecture": "x64",
+      "imports": [
+        "libcrypto-3-x64.dll",
+        "WS2_32.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "The OpenSSL Project, https://www.openssl.org/",
+        "FileDescription": "OpenSSL library",
+        "FileVersion": "3.5.8",
+        "InternalName": "libssl",
+        "OriginalFilename": "libssl",
+        "ProductName": "The OpenSSL Toolkit",
+        "ProductVersion": "3.5.8",
+        "LegalCopyright": "Copyright 1998-2026 The OpenSSL Authors. All rights reserved."
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/libssl-3-x64.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.5.8",
+      "license_files": [
+        "OpenSSL/LICENSE.txt"
+      ],
+      "component": "OpenSSL"
+    },
+    {
+      "path": "libtommath.dll",
+      "sha256": "2d760fefb452665b6af8c8d9d29f3a8378f10fc0847cdd9938ea0cb5edf1d573",
+      "bytes": 81408,
+      "architecture": "x64",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "ADVAPI32.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/libtommath.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "Tcl/Tk 9.0.4 bundled snapshot, binary repo 907f3f4de820cb74fc8fb4431a39beae4c690915",
+      "license_files": [
+        "LibTomMath/LICENSE",
+        "LibTomMath/tommath.h"
+      ],
+      "source_revision_limit": "Standalone binary matches official build and CPython Tcl/Tk binary package; its shipped Unlicense header matches Tcl core-9-0-4 after CRLF normalization. Independent numeric upstream LibTomMath version and exact DLL compiler/source revision are not declared.",
+      "component": "LibTomMath"
+    },
+    {
+      "path": "moderngl/mgl.cp314-win_amd64.pyd",
+      "sha256": "69d8e2eab9b19af322e49c28e65443549b604d981c3d6f9c9f2f5ea39061ced4",
+      "bytes": 166912,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "moderngl",
+        "version": "5.13.0",
+        "source_url": "https://files.pythonhosted.org/packages/6a/06/f64315fea412beb3db4673beba25578af481c615c7d22d91529de24b3f56/moderngl-5.13.0-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "317010ee5d9f26c32e00c06363032ba79463cf66d9178e5159d0827c159f2f08",
+        "source_entry": "moderngl/mgl.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "5.13.0",
+      "license_files": [
+        "moderngl/moderngl-5.13.0.dist-info/licenses/LICENSE"
+      ],
+      "component": "moderngl"
+    },
+    {
+      "path": "numpy.libs/libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll",
+      "sha256": "327b2e0bcffce2882e0dc04cdeb4eaa6382ed4dba29871b6176fa157782f484a",
+      "bytes": 20495360,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "api-ms-win-crt-conio-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy.libs/libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "sha256": "fe121618c00ec9066a46d9613d78e6520c52e87aeaec30ef5695eadc69d03a73",
+      "bytes": 66048,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/_core/_multiarray_tests.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "sha256": "8a6755d3fcc31b0fa0f891a715b9674f592be67c78bd8bc7a66cc8b678acdf6f",
+      "bytes": 3858432,
+      "architecture": "x64",
+      "imports": [
+        "libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll",
+        "python314.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/_core/_multiarray_umath.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "sha256": "c3e3671d613c98a54518b0980118198fe630a4be578951cfd3a85f3fb5efa646",
+      "bytes": 276480,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "sha256": "80b2fd55ef96eec642b7bd2b2b11924342588ebcdc6a1b53bfdd86037d634980",
+      "bytes": 112128,
+      "architecture": "x64",
+      "imports": [
+        "libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/linalg/_umath_linalg.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "sha256": "6efca2c7b78c443ce714a54b9bf85d0d2f3042ff0b2cf8c56343aad052b15cad",
+      "bytes": 215040,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_bounded_integers.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_common.cp314-win_amd64.pyd",
+      "sha256": "fea835c45737c1256336cf44ccac3fdae2b121b71c0ef72c91c6586b582a1dea",
+      "bytes": 173056,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_common.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_generator.cp314-win_amd64.pyd",
+      "sha256": "86a6d563297ec7397b34273d70302e421ac367ccff8ec380425ad8358d6f753e",
+      "bytes": 600576,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_generator.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_mt19937.cp314-win_amd64.pyd",
+      "sha256": "15d8050da660c0714e7a68e944fe064ca9edb3b5631b148383ebc58566edca85",
+      "bytes": 89600,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_mt19937.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_pcg64.cp314-win_amd64.pyd",
+      "sha256": "841ddc84e72cf199c5c84b9bd5d044bee856572643f01b1d34abb0f6260da2bf",
+      "bytes": 101376,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_pcg64.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_philox.cp314-win_amd64.pyd",
+      "sha256": "24ffeb7f2c9295f407f2a306db5807a0001345af7c5b12442cab9020f6bceebf",
+      "bytes": 86016,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_philox.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/_sfc64.cp314-win_amd64.pyd",
+      "sha256": "32def854df75a24f60e5b1d1745742e5c487ccab598bc5f51d93f0c6841a2c09",
+      "bytes": 61440,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/_sfc64.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/bit_generator.cp314-win_amd64.pyd",
+      "sha256": "98b79117865ee8d9df4f424b6bc7ba096b66c856c7054b0f73ef561b074ad52d",
+      "bytes": 168448,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/bit_generator.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "numpy/random/mtrand.cp314-win_amd64.pyd",
+      "sha256": "263d1716120fd1bcc7d5f44a85aa712f76f7dc09335f44591d4e98d3f47eb855",
+      "bytes": 501760,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "numpy",
+        "version": "2.5.2",
+        "source_url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d",
+        "source_entry": "numpy/random/mtrand.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "2.5.2",
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt"
+      ],
+      "component": "numpy"
+    },
+    {
+      "path": "pyexpat.pyd",
+      "sha256": "4154ecccb8f839db1f4400a58d111a00bd794547be774f88fd186e845a9f3898",
+      "bytes": 209408,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "pyexpat.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/pyexpat.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "python314.dll",
+      "sha256": "bfb7f74a7ae69a5ab7029a30ce0424ff351c2ae63a9758444e9ff85c00169cda",
+      "bytes": 6587904,
+      "architecture": "x64",
+      "imports": [
+        "VERSION.dll",
+        "WS2_32.dll",
+        "api-ms-win-core-path-l1-1-0.dll",
+        "bcrypt.dll",
+        "ADVAPI32.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-process-l1-1-0.dll",
+        "api-ms-win-crt-conio-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "python314.dll",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/python314.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "select.pyd",
+      "sha256": "5f20265e11de09bcacc99c0902e2cd886919fe83467a0acbcac866bcc29381d7",
+      "bytes": 18944,
+      "architecture": "x64",
+      "imports": [
+        "WS2_32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "select.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/select.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "tcl90.dll",
+      "sha256": "a1fb45f963b05cb083a97df1449c2023b484eb921d40a463da7501b0f60e0f70",
+      "bytes": 3369299,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "NETAPI32.dll",
+        "USER32.dll",
+        "USERENV.dll",
+        "WS2_32.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "zlib1.dll",
+        "libtommath.dll",
+        "VCRUNTIME140.dll"
+      ],
+      "pe_version": {
+        "FileDescription": "Tcl DLL",
+        "OriginalFilename": "tcl90.dll",
+        "FileVersion": "9.0.4",
+        "LegalCopyright": "Copyright \u00a9 1987-2022 Regents of the University of California and other parties",
+        "ProductName": "Tcl 9.0 for Windows",
+        "ProductVersion": "9.0.4"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/tcl90.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "9.0.4",
+      "license_files": [
+        "TclTk/tcl-license.terms",
+        "TclTk/tk-license.terms"
+      ],
+      "component": "Tcl"
+    },
+    {
+      "path": "tcl9tk90.dll",
+      "sha256": "31f625c52e65d29d126e710ed8bab2ec964cb770e4fc59bc329dfff02cb6ddcf",
+      "bytes": 2138360,
+      "architecture": "x64",
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "GDI32.dll",
+        "USER32.dll",
+        "WINSPOOL.DRV",
+        "SHELL32.dll",
+        "ole32.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "COMDLG32.dll",
+        "COMCTL32.dll",
+        "IMM32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "FileDescription": "Tk DLL",
+        "OriginalFilename": "tk90.dll",
+        "FileVersion": "9.0.4",
+        "LegalCopyright": "Copyright \u00a9 1987-2022 Regents of the University of California and other parties",
+        "ProductName": "Tk 9.0 for Windows",
+        "ProductVersion": "9.0.4"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/tcl9tk90.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "9.0.4",
+      "license_files": [
+        "TclTk/tcl-license.terms",
+        "TclTk/tk-license.terms"
+      ],
+      "component": "Tk"
+    },
+    {
+      "path": "unicodedata.pyd",
+      "sha256": "d0fc4a1ba14f0ff4f08de026b5698878f85f7b023be6b73bd1ec2ea47a2b84b1",
+      "bytes": 744960,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "unicodedata.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/unicodedata.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "winsound.pyd",
+      "sha256": "657b0f3eef8090009c03c804e18ba35174610c618ed2b7bf845a1bdc5d53124d",
+      "bytes": 18944,
+      "architecture": "x64",
+      "imports": [
+        "WINMM.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "python314.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.14.7",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "winsound.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.14.7"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/winsound.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "3.14.7",
+      "license_files": [
+        "CPython/LICENSE.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE"
+      ],
+      "component": "CPython"
+    },
+    {
+      "path": "yaml/_yaml.cp314-win_amd64.pyd",
+      "sha256": "ef5cde08b05f7c8222a458fa49ca5ec891e54d4c721ffdbe1d6a609e26a26718",
+      "bytes": 258560,
+      "architecture": "x64",
+      "imports": [
+        "python314.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "pe_version": {},
+      "official_origin": {
+        "component": "PyYAML",
+        "version": "6.0.3",
+        "source_url": "https://files.pythonhosted.org/packages/23/20/bb6982b26a40bb43951265ba29d4c246ef0ff59c9fdcdf0ed04e0687de4d/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+        "source_archive_sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+        "source_entry": "yaml/_yaml.cp314-win_amd64.pyd"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "6.0.3",
+      "license_files": [
+        "PyYAML/pyyaml-6.0.3.dist-info/licenses/LICENSE"
+      ],
+      "component": "PyYAML"
+    },
+    {
+      "path": "zlib1.dll",
+      "sha256": "f07195206534ebb1fe75093d4ec6c54a7a9227281b0c09d2113465b71da9e900",
+      "bytes": 102912,
+      "architecture": "x64",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll"
+      ],
+      "pe_version": {
+        "FileDescription": "zlib data compression library",
+        "FileVersion": "1.3.2",
+        "InternalName": "zlib1.dll",
+        "LegalCopyright": "(C) 1995-2026 Jean-loup Gailly & Mark Adler",
+        "OriginalFilename": "zlib1.dll",
+        "ProductName": "zlib",
+        "ProductVersion": "1.3.2",
+        "Comments": "For more information visit https://www.zlib.net/"
+      },
+      "official_origin": {
+        "component": "CPython",
+        "version": "3.14.7",
+        "source_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+        "source_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+        "source_entry": "python/install/DLLs/zlib1.dll"
+      },
+      "source_hash_match": true,
+      "status": "Resolved",
+      "version": "1.3.2",
+      "license_files": [
+        "CPython-dependencies/LICENSE.zlib.txt"
+      ],
+      "component": "zlib"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "name": "KERNEL32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "vcruntime140.dll",
+      "classification": "External VC v14 x64 prerequisite",
+      "bundled": false,
+      "tested_system_sha256": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+      "tested_system_pe_version": {
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "Microsoft\u00ae C Runtime Library",
+        "FileVersion": "14.51.36247.0",
+        "InternalName": "vcruntime140.dll",
+        "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "vcruntime140.dll",
+        "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+        "ProductVersion": "14.51.36247.0"
+      },
+      "architecture": "x64",
+      "official_prerequisite_url": "https://aka.ms/vc14/vc_redist.x64.exe"
+    },
+    {
+      "name": "api-ms-win-crt-string-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-time-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-math-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-stdio-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-heap-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-convert-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-utility-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "USER32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "GDI32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-environment-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "PSAPI.DLL",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "ole32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "OLEAUT32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-locale-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "WS2_32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "IPHLPAPI.DLL",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "RPCRT4.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "CRYPT32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "PROPSYS.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "vcruntime140_1.dll",
+      "classification": "External VC v14 x64 prerequisite",
+      "bundled": false,
+      "tested_system_sha256": "a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e",
+      "tested_system_pe_version": {
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "Microsoft\u00ae C Runtime Library",
+        "FileVersion": "14.51.36247.0",
+        "InternalName": "vcruntime140_1.dll",
+        "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "vcruntime140_1.dll",
+        "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+        "ProductVersion": "14.51.36247.0"
+      },
+      "architecture": "x64",
+      "official_prerequisite_url": "https://aka.ms/vc14/vc_redist.x64.exe"
+    },
+    {
+      "name": "ADVAPI32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-private-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-conio-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "classification": "External VC v14 x64 prerequisite",
+      "bundled": false
+    },
+    {
+      "name": "VERSION.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-core-path-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "bcrypt.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "api-ms-win-crt-process-l1-1-0.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "NETAPI32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "USERENV.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "WINSPOOL.DRV",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "SHELL32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "COMDLG32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "COMCTL32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "IMM32.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "WINMM.dll",
+      "classification": "Windows inbox/system component",
+      "bundled": false
+    },
+    {
+      "name": "msvcp140.dll",
+      "classification": "External VC v14 x64 prerequisite",
+      "bundled": false,
+      "tested_system_sha256": "7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca",
+      "tested_system_pe_version": {
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "Microsoft\u00ae C Runtime Library",
+        "FileVersion": "14.51.36247.0",
+        "InternalName": "msvcp140.dll",
+        "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "msvcp140.dll",
+        "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+        "ProductVersion": "14.51.36247.0"
+      },
+      "architecture": "x64",
+      "official_prerequisite_url": "https://aka.ms/vc14/vc_redist.x64.exe"
+    }
+  ],
+  "static_dependencies": {
+    "CPython Expat": "expat_2.8.2",
+    "CPython libmpdec": "4.0.0",
+    "CPython zlib-ng": "2.2.4 (pinned standalone Windows recipe); 1.3.1.zlib-ng",
+    "CPython zstd": "1.5.7",
+    "CPython bzip2": "1.0.8",
+    "CPython liblzma": "5.8.3 (pinned Windows recipe)",
+    "NumPy OpenBLAS": "0.3.34.0.0 (NumPy build configuration)",
+    "Pillow codecs": {
+      "pil": "12.3.0",
+      "tkinter": "9.0",
+      "freetype2": "2.14.3",
+      "littlecms2": "2.19",
+      "webp": "1.6.0",
+      "avif": "1.4.2",
+      "libjpeg_turbo": "3.1.4.1",
+      "zlib_ng": "2.3.3",
+      "jpg": "8.0",
+      "jpg_2000": "2.5.4",
+      "zlib": "1.3.1.zlib-ng",
+      "libtiff": "4.7.1"
+    },
+    "Pillow AVIF codecs": "dav1d [dec]:1.5.3-0-gb546257, aom [enc]:3.14.1"
+  },
+  "license_files": [
+    {
+      "path": "CPython/LICENSE.txt",
+      "sha256": "e745807dbaab26bb1050dc9d12e655ca8d946c38d6cb59a593c2d9557830250c",
+      "bytes": 23601
+    },
+    {
+      "path": "CPython-dependencies/expat-2.8.2-COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "bytes": 1144
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.bzip2.txt",
+      "sha256": "bd5628cc76fb0ebf9c657d1dd4d1a240a1a7b216c31663e7bbf1131c0b70a910",
+      "bytes": 1780
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.expat.txt",
+      "sha256": "8a9cfe4b5924f4b25881aa0c9f5e4561c5f31065d0c4a13cdcdbcf917edf39aa",
+      "bytes": 1165
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.liblzma.txt",
+      "sha256": "d87d218dd908b3243ec4cbc72af400e5b7437513ea9d9229291d0812b8464fec",
+      "bytes": 673
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.mpdecimal.txt",
+      "sha256": "f094277cd46e1f6e4d87916cc4b51e22f613d45eb81f48231c3cb7caf8fc8a6a",
+      "bytes": 1308
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.openssl-3.txt",
+      "sha256": "ed72ce2b51ee58f117e5a021e2e04af158857f40269fbc03491f0b2a99dbcc96",
+      "bytes": 10352
+    },
+    {
+      "path": "CPython-dependencies/LICENSE.zlib.txt",
+      "sha256": "365e36720db366054863235aea5d6f440142ab968834bfaf81fa9d187c99b9b8",
+      "bytes": 1016
+    },
+    {
+      "path": "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+      "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+      "bytes": 867
+    },
+    {
+      "path": "CPython-dependencies/zstd-1.5.7-LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "bytes": 1549
+    },
+    {
+      "path": "libffi/LICENSE",
+      "sha256": "a61d06e8f7be57928e71e800eb9273b05cb8868c484108afe41e4305bb320dde",
+      "bytes": 1132
+    },
+    {
+      "path": "LibTomMath/LICENSE",
+      "sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a",
+      "bytes": 1257
+    },
+    {
+      "path": "LibTomMath/tommath.h",
+      "sha256": "c8fea3c1c898fca555e15d46c2c2d760a27d354af487c99c02f371a2351d45ad",
+      "bytes": 31295
+    },
+    {
+      "path": "OpenSSL/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "bytes": 10175
+    },
+    {
+      "path": "PyOpenGL/license.txt",
+      "sha256": "d37ec6e00a4f88bf80ec0b7b3b9dbea88534c1c66c2f529dc64c7c02e07a6a1b",
+      "bytes": 11678
+    },
+    {
+      "path": "Roboto/font-notices.json",
+      "sha256": "32f100337763366a44ee0e9350b7bbf5081bad911784c43fc34bbee4f8ff42f1",
+      "bytes": 2247
+    },
+    {
+      "path": "Roboto/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "TclTk/tcl-license.terms",
+      "sha256": "41613eabfc08921a7da9c4bfd7f3ce5d5406f55214b253d89f392ed86eebeb8f",
+      "bytes": 2295
+    },
+    {
+      "path": "TclTk/tk-license.terms",
+      "sha256": "0d1e4405f6273f091732764ed89b57066be63ce64869be6c71ea337dc4f2f9b5",
+      "bytes": 2307
+    },
+    {
+      "path": "PyYAML/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+      "bytes": 1101
+    },
+    {
+      "path": "pyopengltk/pyopengltk-0.0.4.dist-info/LICENSE",
+      "sha256": "a79235b5d2f3312b2d9ecc6ebc81f5d256662a84a3f2699ddafa950507738af4",
+      "bytes": 1071
+    },
+    {
+      "path": "PyInstaller/pyinstaller-6.22.3.dist-info/licenses/COPYING.txt",
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64",
+      "bytes": 32604
+    },
+    {
+      "path": "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE",
+      "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857",
+      "bytes": 78016
+    },
+    {
+      "path": "packaging/packaging-26.3.dist-info/licenses/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "bytes": 197
+    },
+    {
+      "path": "packaging/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174
+    },
+    {
+      "path": "packaging/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "bytes": 1344
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+      "sha256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341",
+      "bytes": 45831
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+      "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+      "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "sha256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763",
+      "bytes": 21155
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "sha256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919",
+      "bytes": 1441
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "sha256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41",
+      "bytes": 1573
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "sha256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb",
+      "bytes": 1542
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "sha256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0",
+      "bytes": 704
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "sha256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e",
+      "bytes": 2805
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "sha256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa",
+      "bytes": 2986
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "sha256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f",
+      "bytes": 1176
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "sha256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013",
+      "bytes": 1540
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "sha256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59",
+      "bytes": 1253
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "sha256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763",
+      "bytes": 340
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b",
+      "bytes": 2314
+    },
+    {
+      "path": "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "sha256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af",
+      "bytes": 1523
+    },
+    {
+      "path": "numpy/numpy/ma/LICENSE",
+      "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616
+    },
+    {
+      "path": "numpy/numpy/random/LICENSE.md",
+      "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582
+    },
+    {
+      "path": "numpy/numpy/_core/include/numpy/random/LICENSE.txt",
+      "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039
+    },
+    {
+      "path": "moderngl/moderngl-5.13.0.dist-info/licenses/LICENSE",
+      "sha256": "8606170445f8a941c0517c8e57da97f6a0d0e974d10db901dbbc3b7bd650ec9f",
+      "bytes": 1112
+    },
+    {
+      "path": "glcontext/glcontext-3.1.0.dist-info/licenses/LICENSE",
+      "sha256": "e16bf53d871fd580e43c800aacd8e10aa7a49505701aceec1f708aeaac97dfa7",
+      "bytes": 1099
+    },
+    {
+      "path": "darkdetect/darkdetect-0.8.0.dist-info/LICENSE",
+      "sha256": "69bb84664eff933addcb271c866d67622d9c2c53a5bda31b1a7523569c250afe",
+      "bytes": 1495
+    },
+    {
+      "path": "customtkinter/customtkinter-6.0.0.dist-info/licenses/LICENSE",
+      "sha256": "c973b8600e620159cb0473eb9b08783143e0d9ed5333f350fc933368d94d9e0d",
+      "bytes": 1071
+    }
+  ],
+  "source_provenance": {
+    "python_build_commit": "4bb01f09aaf362c71e891be4a41cb6d6ddf830b3",
+    "python_archive_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7%2B20260901-x86_64-pc-windows-msvc-pgo-full.tar.zst",
+    "python_archive_sha256": "5363ec4aab59c24417f9877217aae95ca17f9ae6eb99c3bbfb25e4a76dcadafe",
+    "cpython_bin_deps_commit": "907f3f4de820cb74fc8fb4431a39beae4c690915",
+    "cpython_bin_deps_archive_sha256": "e7aaa6417b7c2301ecd876307cced7e5bc4575a0b96e66dd08fcb6ab0d5d87a8",
+    "wheels": [
+      {
+        "component": "numpy",
+        "version": "2.5.2",
+        "url": "https://files.pythonhosted.org/packages/15/5c/7bcbd5b11f94199073320410cddcbb80cee62415bfeb540874b265c2d922/numpy-2.5.2-cp314-cp314-win_amd64.whl",
+        "sha256": "7587f53dfbd5edc0f7b87c6217b4c6d2d1f2ef9c3da70bc1315e7db5f8d7ec9d"
+      },
+      {
+        "component": "Pillow",
+        "version": "12.3.0",
+        "url": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+        "sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d"
+      },
+      {
+        "component": "moderngl",
+        "version": "5.13.0",
+        "url": "https://files.pythonhosted.org/packages/6a/06/f64315fea412beb3db4673beba25578af481c615c7d22d91529de24b3f56/moderngl-5.13.0-cp314-cp314-win_amd64.whl",
+        "sha256": "317010ee5d9f26c32e00c06363032ba79463cf66d9178e5159d0827c159f2f08"
+      },
+      {
+        "component": "glcontext",
+        "version": "3.1.0",
+        "url": "https://files.pythonhosted.org/packages/79/13/7b5fa7f75e9b05b6d15614bf4424211233b2274435e0adda265daab78058/glcontext-3.1.0-cp314-cp314-win_amd64.whl",
+        "sha256": "ec2f1678fe91b788569b02fdd58e9309e372f176b1acd606ba0bc383c1043f40"
+      },
+      {
+        "component": "pyopengltk",
+        "version": "0.0.4",
+        "url": "https://files.pythonhosted.org/packages/7e/7f/09782e32c071d4774321b9f8349a5e0f11258930e03a28ffb6c978cbe4b8/pyopengltk-0.0.4-py2.py3-none-any.whl",
+        "sha256": "664c9c97e7f24d7664f4560064e4a4dc8a40880337483080f1b2937de052379e"
+      },
+      {
+        "component": "PyOpenGL",
+        "version": "3.1.10",
+        "url": "https://files.pythonhosted.org/packages/de/e4/1ba6f44e491c4eece978685230dde56b14d51a0365bc1b774ddaa94d14cd/pyopengl-3.1.10-py3-none-any.whl",
+        "sha256": "794a943daced39300879e4e47bd94525280685f42dbb5a998d336cfff151d74f"
+      },
+      {
+        "component": "customtkinter",
+        "version": "6.0.0",
+        "url": "https://files.pythonhosted.org/packages/b0/63/e2d3387432c5a94dec64031c86b5ba737216de7e7490abb55efd64dec054/customtkinter-6.0.0-py3-none-any.whl",
+        "sha256": "704fcbf1d2fca06bd7881b0afacfae72aed9864c9b6de2870e632e55eb3a0456"
+      },
+      {
+        "component": "darkdetect",
+        "version": "0.8.0",
+        "url": "https://files.pythonhosted.org/packages/f2/f2/728f041460f1b9739b85ee23b45fa5a505962ea11fd85bdbe2a02b021373/darkdetect-0.8.0-py3-none-any.whl",
+        "sha256": "a7509ccf517eaad92b31c214f593dbcf138ea8a43b2935406bbd565e15527a85"
+      },
+      {
+        "component": "packaging",
+        "version": "26.3",
+        "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+        "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+      },
+      {
+        "component": "PyInstaller",
+        "version": "6.22.3",
+        "url": "https://files.pythonhosted.org/packages/24/83/c5422204772a27aef643280fdc887b7ef55679989096b21dceb1b9625fc4/pyinstaller-6.22.3-py3-none-win_amd64.whl",
+        "sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b"
+      },
+      {
+        "component": "PyYAML",
+        "version": "6.0.3",
+        "url": "https://files.pythonhosted.org/packages/23/20/bb6982b26a40bb43951265ba29d4c246ef0ff59c9fdcdf0ed04e0687de4d/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+        "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac"
+      }
+    ]
+  },
+  "open_limits": [
+    "LibTomMath exact compiler/source revision is not declared in the official binary package; shipped SPDX Unlicense header and byte-for-byte official-binary provenance are verified.",
+    "Clean Windows machine without VC runtime not tested; official external prerequisite is mandatory.",
+    "Only the current Windows/GPU is tested; no hardware-universal claim.",
+    "Standalone PYTHON.json has stale Tcl/OpenSSL link names and Linux libffi metadata; actual PE imports and pinned Windows build recipe override them. Expat is CPython-vendored 2.8.2, not global recipe expat 2.8.4."
+  ],
+  "external_runtime_aliases": [
+    {
+      "destination": "numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "system_name": "msvcp140.dll"
+    }
+  ],
+  "packaging_regression": {
+    "failure": "Removing all Microsoft DLLs initially broke NumPy because it imports a wheel-hash-renamed MSVCP DLL absent from System32.",
+    "resolution": "Runtime hook copies only the installed System32 msvcp140.dll to its import alias inside the process-private extraction directory. No Microsoft DLL is redistributed, no OS files/settings modified.",
+    "verified_by": "All final frozen QA runs exit 0 on the same final EXE hash."
+  },
+  "components": [
+    {
+      "component": "Pillow",
+      "version": "12.3.0",
+      "status": "Resolved",
+      "native_files": [
+        "PIL/_avif.cp314-win_amd64.pyd",
+        "PIL/_imaging.cp314-win_amd64.pyd",
+        "PIL/_imagingcms.cp314-win_amd64.pyd",
+        "PIL/_imagingft.cp314-win_amd64.pyd",
+        "PIL/_imagingmath.cp314-win_amd64.pyd",
+        "PIL/_imagingtk.cp314-win_amd64.pyd",
+        "PIL/_webp.cp314-win_amd64.pyd"
+      ],
+      "license_files": [
+        "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "CPython",
+      "version": "3.14.7",
+      "status": "Resolved",
+      "native_files": [
+        "_asyncio.pyd",
+        "_bz2.pyd",
+        "_ctypes.pyd",
+        "_decimal.pyd",
+        "_elementtree.pyd",
+        "_hashlib.pyd",
+        "_lzma.pyd",
+        "_multiprocessing.pyd",
+        "_overlapped.pyd",
+        "_queue.pyd",
+        "_socket.pyd",
+        "_ssl.pyd",
+        "_tkinter.pyd",
+        "_uuid.pyd",
+        "_wmi.pyd",
+        "_zstd.pyd",
+        "pyexpat.pyd",
+        "python314.dll",
+        "select.pyd",
+        "unicodedata.pyd",
+        "winsound.pyd"
+      ],
+      "license_files": [
+        "CPython-dependencies/LICENSE.bzip2.txt",
+        "CPython-dependencies/LICENSE.expat.txt",
+        "CPython-dependencies/LICENSE.liblzma.txt",
+        "CPython-dependencies/LICENSE.mpdecimal.txt",
+        "CPython-dependencies/LICENSE.openssl-3.txt",
+        "CPython-dependencies/LICENSE.zlib.txt",
+        "CPython-dependencies/expat-2.8.2-COPYING",
+        "CPython-dependencies/zlib-ng-2.2.4-LICENSE.md",
+        "CPython-dependencies/zstd-1.5.7-LICENSE",
+        "CPython/LICENSE.txt"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "glcontext",
+      "version": "3.1.0",
+      "status": "Resolved",
+      "native_files": [
+        "glcontext/wgl.cp314-win_amd64.pyd"
+      ],
+      "license_files": [
+        "glcontext/glcontext-3.1.0.dist-info/licenses/LICENSE"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "OpenSSL",
+      "version": "3.5.8",
+      "status": "Resolved",
+      "native_files": [
+        "libcrypto-3-x64.dll",
+        "libssl-3-x64.dll"
+      ],
+      "license_files": [
+        "OpenSSL/LICENSE.txt"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "libffi",
+      "version": "3.4.2 (CPython source-deps 16fad4855b3d8c03b5910e405ff3a04395b39a98)",
+      "status": "Resolved",
+      "native_files": [
+        "libffi-8.dll"
+      ],
+      "license_files": [
+        "libffi/LICENSE"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "LibTomMath",
+      "version": "Tcl/Tk 9.0.4 bundled snapshot, binary repo 907f3f4de820cb74fc8fb4431a39beae4c690915",
+      "status": "Resolved",
+      "native_files": [
+        "libtommath.dll"
+      ],
+      "license_files": [
+        "LibTomMath/LICENSE",
+        "LibTomMath/tommath.h"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record",
+      "source_revision_status": "Open: exact compiler/source revision not published; numeric upstream version not declared. Binary provenance and Unlicense notice are Resolved, not inferred from filename."
+    },
+    {
+      "component": "moderngl",
+      "version": "5.13.0",
+      "status": "Resolved",
+      "native_files": [
+        "moderngl/mgl.cp314-win_amd64.pyd"
+      ],
+      "license_files": [
+        "moderngl/moderngl-5.13.0.dist-info/licenses/LICENSE"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "numpy",
+      "version": "2.5.2",
+      "status": "Resolved",
+      "native_files": [
+        "numpy.libs/libscipy_openblas64_-327b2e0bcffce2882e0dc04cdeb4eaa6.dll",
+        "numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+        "numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+        "numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+        "numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+        "numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+        "numpy/random/_common.cp314-win_amd64.pyd",
+        "numpy/random/_generator.cp314-win_amd64.pyd",
+        "numpy/random/_mt19937.cp314-win_amd64.pyd",
+        "numpy/random/_pcg64.cp314-win_amd64.pyd",
+        "numpy/random/_philox.cp314-win_amd64.pyd",
+        "numpy/random/_sfc64.cp314-win_amd64.pyd",
+        "numpy/random/bit_generator.cp314-win_amd64.pyd",
+        "numpy/random/mtrand.cp314-win_amd64.pyd"
+      ],
+      "license_files": [
+        "numpy/numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+        "numpy/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+        "numpy/numpy/_core/include/numpy/random/LICENSE.txt",
+        "numpy/numpy/ma/LICENSE",
+        "numpy/numpy/random/LICENSE.md"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "Tcl",
+      "version": "9.0.4",
+      "status": "Resolved",
+      "native_files": [
+        "tcl90.dll"
+      ],
+      "license_files": [
+        "TclTk/tcl-license.terms",
+        "TclTk/tk-license.terms"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "Tk",
+      "version": "9.0.4",
+      "status": "Resolved",
+      "native_files": [
+        "tcl9tk90.dll"
+      ],
+      "license_files": [
+        "TclTk/tcl-license.terms",
+        "TclTk/tk-license.terms"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "PyYAML",
+      "version": "6.0.3",
+      "status": "Resolved",
+      "native_files": [
+        "yaml/_yaml.cp314-win_amd64.pyd"
+      ],
+      "license_files": [
+        "PyYAML/pyyaml-6.0.3.dist-info/licenses/LICENSE"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "zlib",
+      "version": "1.3.2",
+      "status": "Resolved",
+      "native_files": [
+        "zlib1.dll"
+      ],
+      "license_files": [
+        "CPython-dependencies/LICENSE.zlib.txt"
+      ],
+      "provenance": "Hash-matched official archive/wheel; see per-native record"
+    },
+    {
+      "component": "pyopengltk",
+      "version": "0.0.4",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "pyopengltk/pyopengltk-0.0.4.dist-info/LICENSE"
+      ],
+      "provenance": "https://files.pythonhosted.org/packages/7e/7f/09782e32c071d4774321b9f8349a5e0f11258930e03a28ffb6c978cbe4b8/pyopengltk-0.0.4-py2.py3-none-any.whl; SHA256 664c9c97e7f24d7664f4560064e4a4dc8a40880337483080f1b2937de052379e"
+    },
+    {
+      "component": "PyOpenGL",
+      "version": "3.1.10",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "PyOpenGL/license.txt"
+      ],
+      "provenance": "Primary complete license from official 3.1.10 tag commit bca277036974e5ed9567b90c8176f8c09cd035ec; wheel DLLS excluded before analysis, wrappers GLUT/GLE excluded."
+    },
+    {
+      "component": "customtkinter",
+      "version": "6.0.0",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "customtkinter/customtkinter-6.0.0.dist-info/licenses/LICENSE"
+      ],
+      "provenance": "https://files.pythonhosted.org/packages/b0/63/e2d3387432c5a94dec64031c86b5ba737216de7e7490abb55efd64dec054/customtkinter-6.0.0-py3-none-any.whl; SHA256 704fcbf1d2fca06bd7881b0afacfae72aed9864c9b6de2870e632e55eb3a0456",
+      "license_metadata_discrepancy": "Wheel metadata says CC0; actual shipped LICENSE is MIT, Copyright Tom Schimansky 2023. Shapes font is included in the MIT package; Roboto is separately mapped Apache-2.0."
+    },
+    {
+      "component": "darkdetect",
+      "version": "0.8.0",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "darkdetect/darkdetect-0.8.0.dist-info/LICENSE"
+      ],
+      "provenance": "https://files.pythonhosted.org/packages/f2/f2/728f041460f1b9739b85ee23b45fa5a505962ea11fd85bdbe2a02b021373/darkdetect-0.8.0-py3-none-any.whl; SHA256 a7509ccf517eaad92b31c214f593dbcf138ea8a43b2935406bbd565e15527a85"
+    },
+    {
+      "component": "packaging",
+      "version": "26.3",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "packaging/packaging-26.3.dist-info/licenses/LICENSE",
+        "packaging/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+        "packaging/packaging-26.3.dist-info/licenses/LICENSE.BSD"
+      ],
+      "provenance": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl; SHA256 d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "component": "PyInstaller",
+      "version": "6.22.3",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "PyInstaller/pyinstaller-6.22.3.dist-info/licenses/COPYING.txt"
+      ],
+      "provenance": "https://files.pythonhosted.org/packages/24/83/c5422204772a27aef643280fdc887b7ef55679989096b21dceb1b9625fc4/pyinstaller-6.22.3-py3-none-win_amd64.whl; SHA256 500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b"
+    },
+    {
+      "component": "Roboto",
+      "version": "2.137; 2017 (both bundled TTF name tables)",
+      "status": "Resolved",
+      "native_files": [],
+      "license_files": [
+        "Roboto/LICENSE-2.0.txt",
+        "Roboto/font-notices.json"
+      ],
+      "provenance": "Exact font hashes match official CustomTkinter 6.0.0 PyPI wheel; embedded copyright 2011 Google and Apache-2.0 declaration"
+    },
+    {
+      "component": "LibTomMath source build trace",
+      "version": "9.0.4 official binary-package snapshot",
+      "status": "Open",
+      "native_files": [
+        "libtommath.dll"
+      ],
+      "license_files": [
+        "LibTomMath/LICENSE",
+        "LibTomMath/tommath.h"
+      ],
+      "provenance": "Exact binary/notice verification resolved; source/compiler revision not recorded in upstream prebuilt archive. This is a provenance limit, not an invented missing-license assertion."
+    }
+  ],
+  "component_count": 20,
+  "bootloader": {
+    "component": "PyInstaller",
+    "version": "6.22.3",
+    "installed_bootloader_sha256": "2291f269c3a3804fde1079462239e09a8b32fffbeeaa8f628a531faf5be77d41",
+    "executable_text_section_match": true,
+    "license_file": "PyInstaller/pyinstaller-6.22.3.dist-info/licenses/COPYING.txt",
+    "license": "GPL-2.0-or-later with PyInstaller bootloader distribution exception",
+    "official_wheel_byte_match": true,
+    "official_wheel_sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b",
+    "official_wheel_url": "https://files.pythonhosted.org/packages/24/83/c5422204772a27aef643280fdc887b7ef55679989096b21dceb1b9625fc4/pyinstaller-6.22.3-py3-none-win_amd64.whl"
+  },
+  "notice_text_file_count": 48,
+  "unique_notice_text_hash_count": 45,
+  "notice_support_file_count": 50,
+  "readiness": {
+    "SOURCE_READY": true,
+    "BINARY_TECH_READY": true,
+    "BINARY_READY_STRICT": false,
+    "publication_gate": "Open: exact LibTomMath source/compiler revision requested by the review is not documented by its official binary package. Binary hash provenance and Unlicense grant are verified. Parent must explicitly resolve/accept this remaining provenance limit; no fabricated source revision or blanket legal clearance.",
+    "external_prerequisite": "Microsoft Visual C++ v14 x64 installed from official Microsoft link; tested system 14.51.36247.0 x64",
+    "hardware_scope": "Final candidate runs use Intel UHD Graphics 770 WGL/OpenGL 4.6. RTX 3050 6GB Laptop GPU detected by read-only OS query, not the active renderer."
+  }
+}

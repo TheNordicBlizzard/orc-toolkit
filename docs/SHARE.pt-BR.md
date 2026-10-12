@@ -60,8 +60,7 @@ Rode `python orc_menu.py` e siga o menu. Passo a passo completo no `INSTALL.pt-B
 
 ## Créditos
 
-Baseado no **ORCToolKit do PiMoNFeeD** e no script de importação original dele (MIT),
-além do trabalho original do Szkaradek123. Muito obrigado a eles.
+Importador Python criado por **TheNordicBlizzard** com outra IA e publicado sob MIT do toolkit. Créditos históricos de referência a **PiMoNFeeD / ORCToolKit** e **Szkaradek123** preservados; MIT de projeto C# separado não concede automaticamente licença ao importador Python.
 
 Feedback e pull requests são bem-vindos!
 ```
